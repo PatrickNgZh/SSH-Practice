@@ -24,8 +24,3 @@ CREATE TABLE Notice (
 );
 
 
-
-
--- INSERT INTO Nuser VALUES (
---   ('','','','',)
--- )
