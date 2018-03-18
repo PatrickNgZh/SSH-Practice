@@ -12,4 +12,8 @@ public interface SchoolDao {
     boolean updateData();
 
     void retrieveData();
+
+    boolean deleteMenData();
+
+    void retrieveClassData();
 }

@@ -89,7 +89,50 @@ public class SchoolDaoImpl implements SchoolDao {
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 for (int i = 1; i <= 6; i++) {
-                    System.out.print(resultSet.getString(i)+" ");
+                    System.out.print(resultSet.getString(i) + " ");
+                }
+                System.out.println();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Conn.closeAll(connection, preparedStatement, resultSet);
+        }
+    }
+
+    @Override
+    public boolean deleteMenData() {
+        int row=0;
+        try {
+            connection = Conn.getConnection();
+            String sql = "DELETE FROM student " +
+                    "WHERE Ssex = '男';";
+            preparedStatement = connection.prepareStatement(sql);
+            row=preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Conn.closeAll(connection,preparedStatement,resultSet);
+        }
+        if (row > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public void retrieveClassData() {
+        try {
+            connection = Conn.getConnection();
+            String sql = "SELECT * " +
+                    "FROM student " +
+                    "WHERE Sclass LIKE  '信科%';";
+            preparedStatement = connection.prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                for (int i = 1; i <= 6; i++) {
+                    System.out.print(resultSet.getString(i) + " ");
                 }
                 System.out.println();
             }

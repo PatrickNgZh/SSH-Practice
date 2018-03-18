@@ -31,4 +31,16 @@ public class SchoolDaoImplTest {
         SchoolDao schoolDao = new SchoolDaoImpl();
         schoolDao.retrieveData();
     }
+
+    @Test
+    public void deleteMenData() {
+        SchoolDao schoolDao = new SchoolDaoImpl();
+        System.out.println(schoolDao.deleteMenData());
+    }
+
+    @Test
+    public void retrieveClassData() {
+        SchoolDao schoolDao = new SchoolDaoImpl();
+        schoolDao.retrieveClassData();
+    }
 }
