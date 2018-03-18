@@ -8,12 +8,9 @@
 </head>
 <body>
 <%
-	String name=request.getParameter("username");
-    String password = request.getParameter("pwd");
-    if (name.equals("admin") && password.equals("123456")) {
-        session.setAttribute("name", name);
-        response.sendRedirect("welcome.jsp");
-    }
- %>
+	application.setAttribute("a", new Integer(1));
+	application.setAttribute("b", new Integer(2));	
+%>
+<a href="two.jsp">two.jsp</a>
 </body>
 </html>

@@ -7,13 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	String name=request.getParameter("username");
-    String password = request.getParameter("pwd");
-    if (name.equals("admin") && password.equals("123456")) {
-        session.setAttribute("name", name);
-        response.sendRedirect("welcome.jsp");
-    }
- %>
+<%=application.getAttribute("a") %>
+<br>
+<%=application.getAttribute("b") %>
 </body>
 </html>
