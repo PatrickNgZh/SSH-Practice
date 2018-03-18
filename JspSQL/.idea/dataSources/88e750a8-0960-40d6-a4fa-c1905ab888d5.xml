@@ -39,7 +39,7 @@
     </database>
     <schema id="12" parent="10" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2018-03-17.03:17:31.747</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-03-18.22:52:31.693</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -91,54 +91,101 @@
       <ObjectId>16393</ObjectId>
       <IntrospectionTimestamp>2018-03-16.01:01:38.700</IntrospectionTimestamp>
     </schema>
-    <table id="25" parent="12" name="Notice">
+    <schema id="25" parent="11" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2018-03-18.22:52:31.903</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="26" parent="11" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="27" parent="11" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="28" parent="11" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <schema id="29" parent="11" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="30" parent="11" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="31" parent="11" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="32" parent="11" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="33" parent="11" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="34" parent="11" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="35" parent="11" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="36" parent="11" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="37" parent="11" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <table id="38" parent="12" name="Notice">
       <ObjectId>629577281</ObjectId>
       <CreatedTimestamp>2018-03-12.20:42:56.387</CreatedTimestamp>
       <ModifiedTimestamp>2018-03-12.20:42:56.387</ModifiedTimestamp>
     </table>
-    <table id="26" parent="12" name="Nuser">
+    <table id="39" parent="12" name="Nuser">
       <ObjectId>565577053</ObjectId>
       <CreatedTimestamp>2018-03-12.20:42:56.313</CreatedTimestamp>
       <ModifiedTimestamp>2018-03-12.20:42:56.313</ModifiedTimestamp>
     </table>
-    <table id="27" parent="12" name="Type">
+    <table id="40" parent="12" name="Type">
       <ObjectId>597577167</ObjectId>
       <CreatedTimestamp>2018-03-12.20:42:56.387</CreatedTimestamp>
       <ModifiedTimestamp>2018-03-12.20:42:56.390</ModifiedTimestamp>
     </table>
-    <column id="28" parent="25" name="Nno">
+    <table id="41" parent="25" name="student">
+      <ObjectId>565577053</ObjectId>
+      <CreatedTimestamp>2018-03-17.03:17:30.820</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-17.03:17:30.820</ModifiedTimestamp>
+    </table>
+    <column id="42" parent="38" name="Nno">
       <Position>1</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="25" name="Ntitle">
+    <column id="43" parent="38" name="Ntitle">
       <Position>2</Position>
       <DataType>nvarchar(200)|0</DataType>
     </column>
-    <column id="30" parent="25" name="Ncontent">
+    <column id="44" parent="38" name="Ncontent">
       <Position>3</Position>
       <DataType>ntext|0</DataType>
     </column>
-    <column id="31" parent="25" name="Neditor">
+    <column id="45" parent="38" name="Neditor">
       <Position>4</Position>
       <DataType>nvarchar(50)|0</DataType>
     </column>
-    <column id="32" parent="25" name="NcreateTime">
+    <column id="46" parent="38" name="NcreateTime">
       <Position>5</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="33" parent="25" name="Ntype">
+    <column id="47" parent="38" name="Ntype">
       <Position>6</Position>
       <DataType>int|0</DataType>
     </column>
-    <index id="34" parent="25" name="PK__Notice__C7D1DE30633AC64B">
+    <index id="48" parent="38" name="PK__Notice__C7D1DE30633AC64B">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Nno</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="35" parent="25" name="PK__Notice__C7D1DE30633AC64B">
+    <key id="49" parent="38" name="PK__Notice__C7D1DE30633AC64B">
       <ObjectId>645577338</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-03-12.20:42:56.387</CreatedTimestamp>
@@ -147,7 +194,7 @@
       <UnderlyingIndexName>PK__Notice__C7D1DE30633AC64B</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="36" parent="25" name="FK__Notice__Ntype__276EDEB3">
+    <foreign-key id="50" parent="38" name="FK__Notice__Ntype__276EDEB3">
       <ObjectId>661577395</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-03-12.20:42:56.390</CreatedTimestamp>
@@ -159,27 +206,27 @@
       <RefKeyName>PK__Type__C450026DDB7CE9CB</RefKeyName>
       <RefColNames>Tno</RefColNames>
     </foreign-key>
-    <column id="37" parent="26" name="UNO">
+    <column id="51" parent="39" name="UNO">
       <Position>1</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="38" parent="26" name="Uname">
+    <column id="52" parent="39" name="Uname">
       <Position>2</Position>
       <DataType>nvarchar(50)|0</DataType>
     </column>
-    <column id="39" parent="26" name="Upassword">
+    <column id="53" parent="39" name="Upassword">
       <Position>3</Position>
       <DataType>nvarchar(50)|0</DataType>
     </column>
-    <index id="40" parent="26" name="PK__Nuser__C5B17EBE95888B15">
+    <index id="54" parent="39" name="PK__Nuser__C5B17EBE95888B15">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>UNO</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="41" parent="26" name="PK__Nuser__C5B17EBE95888B15">
+    <key id="55" parent="39" name="PK__Nuser__C5B17EBE95888B15">
       <ObjectId>581577110</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-03-12.20:42:56.383</CreatedTimestamp>
@@ -188,29 +235,70 @@
       <UnderlyingIndexName>PK__Nuser__C5B17EBE95888B15</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="42" parent="27" name="Tno">
+    <column id="56" parent="40" name="Tno">
       <Position>1</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="43" parent="27" name="Ttypename">
+    <column id="57" parent="40" name="Ttypename">
       <Position>2</Position>
       <DataType>nvarchar(50)|0</DataType>
     </column>
-    <index id="44" parent="27" name="PK__Type__C450026DDB7CE9CB">
+    <index id="58" parent="40" name="PK__Type__C450026DDB7CE9CB">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Tno</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="45" parent="27" name="PK__Type__C450026DDB7CE9CB">
+    <key id="59" parent="40" name="PK__Type__C450026DDB7CE9CB">
       <ObjectId>613577224</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-03-12.20:42:56.387</CreatedTimestamp>
       <ModifiedTimestamp>2018-03-12.20:42:56.387</ModifiedTimestamp>
       <ColNames>Tno</ColNames>
       <UnderlyingIndexName>PK__Type__C450026DDB7CE9CB</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="60" parent="41" name="Sno">
+      <Position>1</Position>
+      <DataType>nvarchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="41" name="Sname">
+      <Position>2</Position>
+      <DataType>nvarchar(50)|0</DataType>
+    </column>
+    <column id="62" parent="41" name="Ssex">
+      <Position>3</Position>
+      <DataType>nvarchar(10)|0</DataType>
+    </column>
+    <column id="63" parent="41" name="Sage">
+      <Position>4</Position>
+      <DataType>int|0</DataType>
+    </column>
+    <column id="64" parent="41" name="Sphone">
+      <Position>5</Position>
+      <DataType>nvarchar(20)|0</DataType>
+    </column>
+    <column id="65" parent="41" name="Sclass">
+      <Position>6</Position>
+      <DataType>nvarchar(50)|0</DataType>
+    </column>
+    <index id="66" parent="41" name="PK__student__CA1FE4649DE9AF7B">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Sno</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="67" parent="41" name="PK__student__CA1FE4649DE9AF7B">
+      <ObjectId>581577110</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-03-17.03:17:30.843</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-17.03:17:30.843</ModifiedTimestamp>
+      <ColNames>Sno</ColNames>
+      <UnderlyingIndexName>PK__student__CA1FE4649DE9AF7B</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>

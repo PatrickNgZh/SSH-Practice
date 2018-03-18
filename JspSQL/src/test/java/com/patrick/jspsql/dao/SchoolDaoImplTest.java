@@ -16,6 +16,8 @@ public class SchoolDaoImplTest {
 
     @Test
     public void deleteData() {
+        SchoolDao schoolDao = new SchoolDaoImpl();
+        System.out.println(schoolDao.deleteData());
     }
 
     @Test
@@ -26,5 +28,7 @@ public class SchoolDaoImplTest {
 
     @Test
     public void retrieveData() {
+        SchoolDao schoolDao = new SchoolDaoImpl();
+        schoolDao.retrieveData();
     }
 }

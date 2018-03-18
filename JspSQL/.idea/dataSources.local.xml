@@ -9,7 +9,7 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <user-name>sa</user-name>
-      <introspection-schemas>notice:dbo|school:</introspection-schemas>
+      <introspection-schemas>notice:dbo|school:@</introspection-schemas>
     </data-source>
   </component>
 </project>

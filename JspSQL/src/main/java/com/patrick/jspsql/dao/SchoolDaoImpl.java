@@ -25,8 +25,8 @@ public class SchoolDaoImpl implements SchoolDao {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            Conn.closeAll(connection,preparedStatement,resultSet);
+        } finally {
+            Conn.closeAll(connection, preparedStatement, resultSet);
         }
         if (row == 1) {
             return true;
@@ -37,7 +37,23 @@ public class SchoolDaoImpl implements SchoolDao {
 
     @Override
     public boolean deleteData() {
-        return false;
+        int row = 0;
+        try {
+            connection = Conn.getConnection();
+            String sql = "DELETE FROM student " +
+                    "WHERE Sno = '150102102416';";
+            preparedStatement = connection.prepareStatement(sql);
+            row = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Conn.closeAll(connection, preparedStatement, resultSet);
+        }
+        if (row == 1) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -53,7 +69,7 @@ public class SchoolDaoImpl implements SchoolDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            Conn.closeAll(connection,preparedStatement,resultSet);
+            Conn.closeAll(connection, preparedStatement, resultSet);
         }
         if (row == 1) {
             return true;
@@ -64,7 +80,23 @@ public class SchoolDaoImpl implements SchoolDao {
 
     @Override
     public void retrieveData() {
-//        connection = Conn.getConnection();
-//        String sql="updata"
+        try {
+            connection = Conn.getConnection();
+            String sql = "SELECT * " +
+                    "FROM student " +
+                    "WHERE Sage > 20;";
+            preparedStatement = connection.prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                for (int i = 1; i <= 6; i++) {
+                    System.out.print(resultSet.getString(i)+" ");
+                }
+                System.out.println();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Conn.closeAll(connection, preparedStatement, resultSet);
+        }
     }
 }
