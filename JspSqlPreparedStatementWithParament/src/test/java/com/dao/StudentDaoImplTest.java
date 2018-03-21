@@ -18,4 +18,20 @@ public class StudentDaoImplTest {
     @Test
     public void createStudentInfo() {
     }
+
+
+    @Test
+    public void createStudentInfo1() {
+        //注意resultSet的标号是从0开始的
+        System.out.println(new StudentDaoImpl().getAllStudentName());
+    }
+
+    @Test
+    public void getAllStudentName() {
+    }
+
+    @Test
+    public void getStudentInfoByName() {
+        System.out.println(new StudentDaoImpl().getStudentInfoByName("小红"));
+    }
 }

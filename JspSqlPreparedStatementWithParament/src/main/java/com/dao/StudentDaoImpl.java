@@ -16,6 +16,8 @@ public class StudentDaoImpl implements StudentDao {
     PreparedStatement preparedStatement = null;
     ResultSet resultSet = null;
     Student student = null;
+    List<String> nameList=null;
+    String studentName = null;
 
 	@Override
 	public List<Student> getAllSelectedInfo(String title) {
@@ -39,7 +41,6 @@ public class StudentDaoImpl implements StudentDao {
                 list.add(student);
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
             return null;
         } finally {
@@ -51,6 +52,56 @@ public class StudentDaoImpl implements StudentDao {
 	@Override
 	public boolean createStudentInfo(String no, String name) {
 		return false;
-	}  
-    
+	}
+
+    @Override
+    public List<String> getAllStudentName() {
+        nameList = new ArrayList<String>();
+        connection = ConnectionManager.getConnection();
+        String sql = "SELECT Sname " +
+                "FROM student;";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                studentName = new String(resultSet.getString(1));
+                nameList.add(studentName);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+        }
+        return nameList;
+    }
+
+    @Override
+    public Student getStudentInfoByName(String name) {
+        student = new Student();
+        connection = ConnectionManager.getConnection();
+        String sql = "SELECT * " +
+                "FROM student " +
+                "WHERE Sname = ?;";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, name);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                student.setSno(resultSet.getString("Sno"));
+                student.setSname(resultSet.getString("Sname"));
+                student.setSsex(resultSet.getString("Ssex"));
+                student.setSage(resultSet.getInt("Sage"));
+                student.setSphone(resultSet.getString("Sphone"));
+                student.setSclass(resultSet.getString("Sclass"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+        }
+        return student;
+    }
+
 }

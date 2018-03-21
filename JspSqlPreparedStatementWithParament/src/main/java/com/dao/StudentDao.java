@@ -10,4 +10,8 @@ public interface StudentDao {
     List<Student> getAllSelectedInfo(String title);
     
     boolean createStudentInfo(String no,String name);
+
+    List<String> getAllStudentName();
+
+    Student getStudentInfoByName(String name);
 }
