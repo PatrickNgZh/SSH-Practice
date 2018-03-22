@@ -17,7 +17,7 @@
     List<Student> list = null;
     list = new StudentBiz().getAllSelectedInfo("信科");
     for (Student student : list) {
-        out.print(student);
+        out.print(student+"<br>");
     }
 %>
 </body>

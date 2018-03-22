@@ -54,10 +54,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="input.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/input.jsp">
+        <entry file="file://$PROJECT_DIR$/web/HandleInfo/input.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="-160">
+              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bean/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,28 +77,17 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/774df2b0-115a-42a8-b3fc-dfcf9d61c99a/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="link1.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/SelectedByName/link1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="link2.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/SelectedByName/link2.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-              <folding />
+      <file leaf-file-name="student" pinned="false" current-in-tab="false">
+        <entry file="das://table:/85e0059d/774df2b0-115a-42a8-b3fc-dfcf9d61c99a/school.dbo.student">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -96,8 +95,18 @@
       <file leaf-file-name="StudentDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/StudentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+            <state relative-caret-position="648">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result2.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/HandleInfo/result2.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -106,43 +115,52 @@
       <file leaf-file-name="StudentDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/StudentDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+            <state relative-caret-position="812">
+              <caret line="149" column="25" lean-forward="true" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
               <folding>
-                <marker date="1521632524865" expanded="true" signature="744:785" ph="SELECT * FRO... student" />
-                <marker date="1521632524865" expanded="true" signature="1990:2036" ph="SELECT Sname... student" />
-                <marker date="1521632524865" expanded="true" signature="2757:2835" ph="SELECT *\nFR... student" />
-                <marker date="1521632524865" expanded="true" signature="2757:2836" ph="SELECT * FRO... student" />
+                <marker date="1521730037420" expanded="true" signature="744:785" ph="SELECT * FRO... student" />
+                <marker date="1521730037420" expanded="true" signature="1990:2036" ph="SELECT Sname... student" />
+                <marker date="1521730037420" expanded="true" signature="2757:2835" ph="SELECT *\nFR... student" />
+                <marker date="1521730037420" expanded="true" signature="2757:2836" ph="SELECT * FRO... student" />
+                <marker date="1521730037420" expanded="true" signature="3868:3937" ph="INSERT INTO student... " />
+                <marker date="1521730037420" expanded="true" signature="4644:4663" ph="DELETE FROM student... " />
+                <marker date="1521730037420" expanded="true" signature="4644:4664" ph="DELETE FROM student... " />
+                <marker date="1521730037420" expanded="true" signature="4644:4698" ph="DELETE FROM student... " />
+                <marker date="1521730037420" expanded="true" signature="4644:4699" ph="DELETE FROM student... " />
+                <marker date="1521730037420" expanded="true" signature="4644:4700" ph="DELETE FROM student... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="link3.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/SelectedByName/link3.jsp">
+      <file leaf-file-name="result3.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/HandleInfo/result3.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="576">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentDaoImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/dao/StudentDaoImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="44" column="66" lean-forward="false" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+              <folding>
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="result1.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/result1.jsp">
+        <entry file="file://$PROJECT_DIR$/web/HandleInfo/result1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -167,18 +185,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/biz/StudentBiz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bean/Student.java" />
-        <option value="$PROJECT_DIR$/web/result1.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/dao/ConnectionManager.java" />
         <option value="$PROJECT_DIR$/web/result4.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/SelectedByName/link1.jsp" />
         <option value="$PROJECT_DIR$/web/SelectedByName/link2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dao/StudentDao.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/774df2b0-115a-42a8-b3fc-dfcf9d61c99a/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dao/StudentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/dao/StudentDaoImplTest.java" />
         <option value="$PROJECT_DIR$/web/SelectedByName/link3.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bean/Student.java" />
+        <option value="$PROJECT_DIR$/web/result1.jsp" />
+        <option value="$PROJECT_DIR$/web/HandleInfo/input.jsp" />
+        <option value="$PROJECT_DIR$/web/HandleInfo/result2.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/774df2b0-115a-42a8-b3fc-dfcf9d61c99a/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dao/StudentDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dao/StudentDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dao/StudentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/HandleInfo/result3.jsp" />
       </list>
     </option>
   </component>
@@ -240,10 +261,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,6 +361,12 @@
               <item name="JspSqlPreparedStatementWithParament" type="b2602c69:ProjectViewProjectNode" />
               <item name="JspSqlPreparedStatementWithParament" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="HandleInfo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JspSqlPreparedStatementWithParament" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JspSqlPreparedStatementWithParament" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="SelectedByName" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,6 +377,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,6 +402,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\JspSqlPreparedStatementWithParament\web\HandleInfo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,6 +466,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="StudentDaoImplTest.deleteBySex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="JspSqlPreparedStatementWithParament" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dao.StudentDaoImplTest" />
+      <option name="METHOD_NAME" value="deleteBySex" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="StudentDaoImplTest.getAllSelectedInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -474,6 +529,31 @@
       <option name="PACKAGE_NAME" value="com.dao" />
       <option name="MAIN_CLASS_NAME" value="com.dao.StudentDaoImplTest" />
       <option name="METHOD_NAME" value="getStudentInfoByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="StudentDaoImplTest.insertBasicInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="JspSqlPreparedStatementWithParament" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.dao.StudentDaoImplTest" />
+      <option name="METHOD_NAME" value="insertBasicInfo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -618,17 +698,21 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.5.16" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.getAllSelectedInfo" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.createStudentInfo1" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.getStudentInfoByName" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.insertBasicInfo" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.deleteBySex" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.getStudentInfoByName" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.createStudentInfo1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.getAllSelectedInfo" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.deleteBySex" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.insertBasicInfo" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.getStudentInfoByName" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.createStudentInfo1" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StudentDaoImplTest.getAllSelectedInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -655,21 +739,20 @@
       <workItem from="1521616236820" duration="902000" />
       <workItem from="1521617655933" duration="21000" />
       <workItem from="1521629758778" duration="3241000" />
+      <workItem from="1521642107675" duration="3353000" />
+      <workItem from="1521729204218" duration="975000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentDaoImplTest_createStudentInfo1 - 2018.03.21 at 19h 09m 22s.xml">
-      <configuration name="StudentDaoImplTest.createStudentInfo1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentDaoImplTest_createStudentInfo1 - 2018.03.21 at 19h 10m 11s.xml">
-      <configuration name="StudentDaoImplTest.createStudentInfo1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StudentDaoImplTest_createStudentInfo1 - 2018.03.21 at 19h 11m 01s.xml">
       <configuration name="StudentDaoImplTest.createStudentInfo1" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StudentDaoImplTest_createStudentInfo1 - 2018.03.21 at 19h 17m 12s.xml">
       <configuration name="StudentDaoImplTest.createStudentInfo1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDaoImplTest_deleteBySex - 2018.03.22 at 22h 46m 39s.xml">
+      <configuration name="StudentDaoImplTest.deleteBySex" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StudentDaoImplTest_getAllSelectedInfo - 2018.03.21 at 13h 14m 42s.xml">
       <configuration name="StudentDaoImplTest.getAllSelectedInfo" configurationId="JUnit" />
@@ -689,9 +772,12 @@
     <history-entry file="StudentDaoImplTest_getStudentInfoByName - 2018.03.21 at 19h 47m 39s.xml">
       <configuration name="StudentDaoImplTest.getStudentInfoByName" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentDaoImplTest_insertBasicInfo - 2018.03.21 at 22h 57m 12s.xml">
+      <configuration name="StudentDaoImplTest.insertBasicInfo" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10863000" />
+    <option name="totallyTimeSpent" value="15191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,37 +790,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70714283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.70714283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50714284" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28077754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2775378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50714284" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -785,7 +872,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/result1.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
@@ -793,7 +880,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/input.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/input.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -802,7 +889,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/result4.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/result1.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="53" />
@@ -824,7 +911,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/result2.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result2.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -862,7 +949,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/input.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/input.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
           <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
@@ -870,7 +957,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/result1.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
@@ -892,7 +979,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/result3.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result3.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -900,7 +987,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/result2.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result2.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -938,7 +1025,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/input.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/input.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
@@ -946,7 +1033,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/result1.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
@@ -968,7 +1055,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/result3.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result3.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -976,7 +1063,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/result2.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result2.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1013,28 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/85e0059d/774df2b0-115a-42a8-b3fc-dfcf9d61c99a/school.dbo.student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bean/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/result3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/microsoft/sqlserver/mssql-jdbc/6.2.2.jre8/mssql-jdbc-6.2.2.jre8.jar!/com/microsoft/sqlserver/jdbc/SQLServerDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
@@ -1046,14 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/result2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,14 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/result1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1097,60 +1146,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/input.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/dao/StudentDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="34" column="72" lean-forward="false" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
-          <folding>
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
-          <folding>
-            <marker date="1521632524865" expanded="true" signature="744:785" ph="SELECT * FRO... student" />
-            <marker date="1521632524865" expanded="true" signature="1990:2036" ph="SELECT Sname... student" />
-            <marker date="1521632524865" expanded="true" signature="2757:2835" ph="SELECT *\nFR... student" />
-            <marker date="1521632524865" expanded="true" signature="2757:2836" ph="SELECT * FRO... student" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/SelectedByName/link2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="504">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/774df2b0-115a-42a8-b3fc-dfcf9d61c99a/console.sql">
+    <entry file="file://$PROJECT_DIR$/web/SelectedByName/link3.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="812">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1158,15 +1165,100 @@
     <entry file="file://$PROJECT_DIR$/web/SelectedByName/link1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/SelectedByName/link3.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bean/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="540">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dao/StudentDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="44" column="66" lean-forward="false" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+          <folding>
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/StudentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/StudentDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="149" column="25" lean-forward="true" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
+          <folding>
+            <marker date="1521730037420" expanded="true" signature="744:785" ph="SELECT * FRO... student" />
+            <marker date="1521730037420" expanded="true" signature="1990:2036" ph="SELECT Sname... student" />
+            <marker date="1521730037420" expanded="true" signature="2757:2835" ph="SELECT *\nFR... student" />
+            <marker date="1521730037420" expanded="true" signature="2757:2836" ph="SELECT * FRO... student" />
+            <marker date="1521730037420" expanded="true" signature="3868:3937" ph="INSERT INTO student... " />
+            <marker date="1521730037420" expanded="true" signature="4644:4663" ph="DELETE FROM student... " />
+            <marker date="1521730037420" expanded="true" signature="4644:4664" ph="DELETE FROM student... " />
+            <marker date="1521730037420" expanded="true" signature="4644:4698" ph="DELETE FROM student... " />
+            <marker date="1521730037420" expanded="true" signature="4644:4699" ph="DELETE FROM student... " />
+            <marker date="1521730037420" expanded="true" signature="4644:4700" ph="DELETE FROM student... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/input.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/774df2b0-115a-42a8-b3fc-dfcf9d61c99a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/85e0059d/774df2b0-115a-42a8-b3fc-dfcf9d61c99a/school.dbo.student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HandleInfo/result3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>

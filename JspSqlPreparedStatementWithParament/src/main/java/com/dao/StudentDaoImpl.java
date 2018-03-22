@@ -104,4 +104,51 @@ public class StudentDaoImpl implements StudentDao {
         return student;
     }
 
+    @Override
+    public boolean insertBasicInfo(String no, String name) {
+        int row = 0;
+        connection = ConnectionManager.getConnection();
+        String sql = "INSERT INTO student (Sno, Sname) VALUES " +
+                "  (?, ?);";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, no);
+            preparedStatement.setString(2,name);
+            row = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+        }
+        if (row == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public boolean deleteBySex(String sex) {
+        int row = 0;
+        connection = ConnectionManager.getConnection();
+        String sql = "DELETE FROM student "
+                + "WHERE Ssex = ?;";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, sex);
+            row = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+        }
+        if (row != 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

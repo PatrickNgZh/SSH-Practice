@@ -34,4 +34,14 @@ public class StudentDaoImplTest {
     public void getStudentInfoByName() {
         System.out.println(new StudentDaoImpl().getStudentInfoByName("小红"));
     }
+
+    @Test
+    public void insertBasicInfo() {
+        System.out.println(new StudentDaoImpl().insertBasicInfo("140101101519","小杨"));
+    }
+
+    @Test
+    public void deleteBySex() {
+        System.out.println(new StudentDaoImpl().deleteBySex("女"));
+    }
 }

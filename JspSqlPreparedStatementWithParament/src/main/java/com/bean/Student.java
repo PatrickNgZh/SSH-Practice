@@ -50,8 +50,8 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student [sno=" + sno + ", sname=" + sname + ", ssex=" + ssex + ", sage=" + sage + ", sphone=" + sphone
-                + ", sclass=" + sclass + "]";
+        return sno + "  " + sname + "   " + ssex + "    " + sage + "    " + sphone
+                + " " + sclass;
     }
 
     public String getSclass() {

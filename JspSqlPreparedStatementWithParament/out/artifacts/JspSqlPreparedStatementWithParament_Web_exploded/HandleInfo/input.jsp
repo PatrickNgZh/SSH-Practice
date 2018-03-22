@@ -14,9 +14,9 @@
 <br>
 <input type="submit" value="查询"/>
 </form>
- 
+<br>
+<br>
 <hr color="blue">
- 
 <form method="post" action="result2.jsp">
  学号:<input type="text" name="no2"/>
 <br>
@@ -26,9 +26,9 @@
 <br>
 <input type="submit" value="添加"/> 
 </form>
- 
+<br>
+<br>
 <hr color="blue">
-  
 <form method="post" action="result3.jsp">
  性别:<input type="text" name="no3"/>
 <br>

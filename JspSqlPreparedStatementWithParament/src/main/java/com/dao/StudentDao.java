@@ -14,4 +14,8 @@ public interface StudentDao {
     List<String> getAllStudentName();
 
     Student getStudentInfoByName(String name);
+
+    boolean insertBasicInfo(String no, String name);
+
+    boolean deleteBySex(String sex);
 }
