@@ -38,7 +38,7 @@
     </database>
     <schema id="12" parent="11" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2018-03-21.21:03:05.227</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-03-23.06:55:50.983</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -79,9 +79,9 @@
       <ObjectId>16393</ObjectId>
     </schema>
     <table id="25" parent="12" name="student">
-      <ObjectId>885578193</ObjectId>
-      <CreatedTimestamp>2018-03-19.04:30:52.127</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-19.04:30:52.127</ModifiedTimestamp>
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2018-03-23.06:55:50.573</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-23.06:55:50.573</ModifiedTimestamp>
     </table>
     <column id="26" parent="25" name="Sno">
       <Position>1</Position>
@@ -108,20 +108,20 @@
       <Position>6</Position>
       <DataType>nvarchar(50)|0</DataType>
     </column>
-    <index id="32" parent="25" name="PK__student__CA1FE464E8282CBF">
+    <index id="32" parent="25" name="PK__student__CA1FE4640E4AA4D9">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Sno</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="33" parent="25" name="PK__student__CA1FE464E8282CBF">
-      <ObjectId>901578250</ObjectId>
+    <key id="33" parent="25" name="PK__student__CA1FE4640E4AA4D9">
+      <ObjectId>1221579390</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-19.04:30:52.147</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-19.04:30:52.147</ModifiedTimestamp>
+      <CreatedTimestamp>2018-03-23.06:55:50.580</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-23.06:55:50.580</ModifiedTimestamp>
       <ColNames>Sno</ColNames>
-      <UnderlyingIndexName>PK__student__CA1FE464E8282CBF</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__student__CA1FE4640E4AA4D9</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>
