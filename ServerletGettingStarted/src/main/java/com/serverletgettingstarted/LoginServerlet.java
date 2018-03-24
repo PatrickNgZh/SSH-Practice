@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 /**
  * Servlet implementation class LoginServerlet
  */
-@WebServlet("/LoginServerlet")
+@WebServlet(urlPatterns ="/LoginServerlet",name ="LoginServerlet")
 public class LoginServerlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

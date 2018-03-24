@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ServerletGettingStarted:Web exploded">
+    <output-path>$PROJECT_DIR$/../ServerletGettingStarted/out/artifacts/ServerletGettingStarted_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ServerletGettingStarted/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ServerletGettingStarted" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-annotations-api:8.5.23" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.23" />
+          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:mssql-jdbc:6.2.2.jre8" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
