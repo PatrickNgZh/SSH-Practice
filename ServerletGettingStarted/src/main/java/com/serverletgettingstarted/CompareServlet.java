@@ -11,7 +11,7 @@ import java.io.IOException;
  * @author peicong
  * @date 2018/3/24 0024
  */
-@WebServlet(name = "CompareServlet")
+@WebServlet(name = "CompareServlet",urlPatterns = "/CompareServlet")
 public class CompareServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
