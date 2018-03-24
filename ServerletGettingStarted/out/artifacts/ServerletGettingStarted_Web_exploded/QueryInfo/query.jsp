@@ -8,12 +8,13 @@
 </head>
 <body>
 <%
+    request.setCharacterEncoding("UTF-8");
 	String message = (String)request.getAttribute("message");
 	if(message!=null){
-		out.println(message+"<br>");
+        out.println(message+"<br>");
 	}
  %>
-<form action="">
+<form action="CompareServlet" method="post">
 	学号：<input type="text" name="studentNo">
 	<br>
 	<input type="submit" value="提交">

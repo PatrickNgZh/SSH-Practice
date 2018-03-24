@@ -18,4 +18,6 @@ public interface StudentDao {
     boolean insertBasicInfo(String no, String name);
 
     boolean deleteBySex(String sex);
+
+    Student retrieveStudentInfoBySno(String sno);
 }

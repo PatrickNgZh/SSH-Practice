@@ -16,14 +16,14 @@ public class StudentDaoImpl implements StudentDao {
     PreparedStatement preparedStatement = null;
     ResultSet resultSet = null;
     Student student = null;
-    List<String> nameList=null;
+    List<String> nameList = null;
     String studentName = null;
 
-	@Override
-	public List<Student> getAllSelectedInfo(String title) {
-	    //这里的setString会自动单引号
-		String myString = title+"%";
-		list = new ArrayList<Student>();
+    @Override
+    public List<Student> getAllSelectedInfo(String title) {
+        //这里的setString会自动单引号
+        String myString = title + "%";
+        list = new ArrayList<Student>();
         connection = ConnectionManager.getConnection();
         String sql = "SELECT * FROM student WHERE Sclass LIKE ?;";
         try {
@@ -47,12 +47,12 @@ public class StudentDaoImpl implements StudentDao {
             ConnectionManager.closeAll(connection, preparedStatement, resultSet);
         }
         return list;
-	}
+    }
 
-	@Override
-	public boolean createStudentInfo(String no, String name) {
-		return false;
-	}
+    @Override
+    public boolean createStudentInfo(String no, String name) {
+        return false;
+    }
 
     @Override
     public List<String> getAllStudentName() {
@@ -113,7 +113,7 @@ public class StudentDaoImpl implements StudentDao {
         try {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, no);
-            preparedStatement.setString(2,name);
+            preparedStatement.setString(2, name);
             row = preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -149,6 +149,34 @@ public class StudentDaoImpl implements StudentDao {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public Student retrieveStudentInfoBySno(String sno) {
+        student = new Student();
+        connection = ConnectionManager.getConnection();
+        String sql = "SELECT * " +
+                "FROM student " +
+                "WHERE Sno = ?;";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, sno);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                student.setSno(resultSet.getString("Sno"));
+                student.setSname(resultSet.getString("Sname"));
+                student.setSsex(resultSet.getString("Ssex"));
+                student.setSage(resultSet.getInt("Sage"));
+                student.setSphone(resultSet.getString("Sphone"));
+                student.setSclass(resultSet.getString("Sclass"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+        }
+        return student;
     }
 
 }

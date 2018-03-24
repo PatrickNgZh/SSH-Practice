@@ -2,8 +2,6 @@ package com.dao;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * @author peicong
  * @date 2018/3/21 0021
@@ -43,5 +41,10 @@ public class StudentDaoImplTest {
     @Test
     public void deleteBySex() {
         System.out.println(new StudentDaoImpl().deleteBySex("女"));
+    }
+
+    @Test
+    public void retrieveStudentInfoBySno() {
+        System.out.println(new StudentDaoImpl().retrieveStudentInfoBySno("130202104449"));
     }
 }
