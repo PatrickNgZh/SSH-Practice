@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<script language="JavaScript">
+    alert("登陆成功！");
+    window.location.href = 'back.jsp';
+</script>
 </body>
 </html>
