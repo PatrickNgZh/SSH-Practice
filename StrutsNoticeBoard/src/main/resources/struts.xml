@@ -4,12 +4,23 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-	<package name="user" extends="struts-default" namespace="/user">
+    <constant name="struts.custom.i18n.resources" value="globalMessage"/>
 
-        <action name="login" class="com.patrick.strutsnoticeboard.controller.LoginController" method="execute">
-            <result name="success">/success.jsp</result>
-            <result name="input">/login.jsp</result>
+	<package name="user" extends="struts-default" namespace="/login">
+        <interceptors>
+            <interceptor name="logininterceptor" class="com.patrick.strutsnoticeboard.intercepter.LoginIntecepter"/>
+        </interceptors>
+
+        <action name="login" class="com.patrick.strutsnoticeboard.controller.LoginController">
+            <result name="success">/WEB-INF/back/backIndex.jsp</result>
+            <result name="input">/WEB-INF/login/login.jsp</result>
+            <interceptor-ref name="logininterceptor"/>
         </action>
+
+        <action name="vertify" class="com.patrick.strutsnoticeboard.controller.LoginVertifyController">
+            <result name="success">/WEB-INF/back/backIndex.jsp</result>
+        </action>
+
 	</package>
 
     <package name="home" extends="struts-default">
@@ -30,4 +41,11 @@
             <result name="showDetail">/WEB-INF/notice/showNoticeDetailByID.jsp</result>
         </action>
     </package>
+
+    <package name="logout" extends="struts-default" namespace="/logout">
+        <action name="logout" class="com.patrick.strutsnoticeboard.controller.LogoutController">
+            <result name="success">/</result>
+        </action>
+    </package>
+
 </struts>

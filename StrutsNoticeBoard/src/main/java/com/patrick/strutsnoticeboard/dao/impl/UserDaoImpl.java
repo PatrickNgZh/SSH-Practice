@@ -17,8 +17,8 @@ public class UserDaoImpl implements UserDao {
     public boolean vertifyUser(String name, String password) {
         connection = ConnectionManager.getConnection();
         String sql = "select * " +
-                "from user_table " +
-                "where name = ? and password = ?;";
+                "from Nuser " +
+                "where Uname = ? and Upassword = ?;";
         try {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, name);

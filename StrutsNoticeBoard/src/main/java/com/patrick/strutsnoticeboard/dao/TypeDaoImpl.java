@@ -32,7 +32,7 @@
 //                list.add(noticeType);
 //            }
 //        } catch (SQLException e) {
-//            // TODO Auto-generated catch block
+//
 //            e.printStackTrace();
 //            return null;
 //        } finally {

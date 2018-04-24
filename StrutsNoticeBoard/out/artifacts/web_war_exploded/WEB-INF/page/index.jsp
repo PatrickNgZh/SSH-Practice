@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="/struts-tags" prefix="s"%>
-<%@ taglib prefix="S" uri="/struts-tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -14,7 +13,7 @@
 <div id="ncss_banner_wrapper">
     <div id="ncss_banner_image"><img src="../../images/b.gif" alt="image"/></div>
     <div id="ncss_banner_content">
-        <div class="header_01">通知公告发布系统 &nbsp;&nbsp; <a href="/login.jsp">登录后台</a></div>
+        <div class="header_01">通知公告发布系统 &nbsp;&nbsp; <a href="/login/login.action">登录后台</a></div>
     </div>
 </div>
 <!-- end of banner -->

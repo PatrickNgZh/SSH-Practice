@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web:war exploded" />
+      <artifact name="StrutsNoticeBoard:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -47,7 +47,39 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="backIndex.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/back/backIndex.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LogoutController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,20 +96,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/CreateDatebase.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/UserDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/patrick/strutsnoticeboard/dao/UserDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/web/success.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/TypeDao.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5ea65d9d-e5fd-4d6e-8b9f-c1296c18317c/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ed3b1026-48ba-4819-945f-3a8b8661d9ad/console.sql" />
         <option value="$PROJECT_DIR$/src/test/java/com/patrick/strutsnoticeboard/dao/impl/TypeDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/ConnectionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/bean/Type.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/impl/TypeDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/biz/TypeBiz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/nullList.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/bean/Notice.java" />
@@ -87,12 +115,28 @@
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/biz/NoticeBiz.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/impl/NoticeDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/patrick/strutsnoticeboard/dao/impl/NoticeDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/notice/showNoticeDetailByID.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/notice/showNoticeByType.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/NoticeDetailController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginInit.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/globalMessages_en_US.properties" />
+        <option value="$PROJECT_DIR$/web/login1.jsp" />
+        <option value="$PROJECT_DIR$/web/success.jsp" />
+        <option value="$PROJECT_DIR$/src/test/java/com/patrick/strutsnoticeboard/dao/impl/UserDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/logout.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/TypeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginVertifyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/login/login.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/intercepter/LoginIntecepter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LogoutController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/back/backIndex.jsp" />
       </list>
     </option>
   </component>
@@ -131,7 +175,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="3" />
     <option name="y" value="88" />
     <option name="width" value="1401" />
@@ -257,6 +301,17 @@
               <item name="StrutsNoticeBoard" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="patrick" type="462c0819:PsiDirectoryNode" />
+              <item name="strutsnoticeboard" type="462c0819:PsiDirectoryNode" />
+              <item name="intercepter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StrutsNoticeBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StrutsNoticeBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -338,6 +393,20 @@
               <item name="StrutsNoticeBoard" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StrutsNoticeBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StrutsNoticeBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StrutsNoticeBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StrutsNoticeBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="notice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -375,21 +444,21 @@
       <recent name="com.patrick.strutsnoticeboard.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web\WEB-INF\login" />
       <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web\WEB-INF\notice" />
       <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web" />
       <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web\WEB-INF" />
       <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web\WEB-INF\page" />
-      <recent name="C:\Users\Administrator\IdeaProjects\StrutsNoticeBoard\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web" />
+      <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web\WEB-INF\back" />
       <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web\WEB-INF\notice" />
       <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\web\WEB-INF\page" />
       <recent name="C:\Users\peicong\Desktop\ssh\Jsp exercises\SSH-Practice\StrutsNoticeBoard\src\main\java\com\patrick\strutsnoticeboard\bean" />
-      <recent name="C:\Users\Administrator\IdeaProjects\StrutsNoticeBoard\web" />
-      <recent name="C:\Users\Administrator\IdeaProjects\StrutsNoticeBoard" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -423,30 +492,6 @@
       <option name="PACKAGE_NAME" value="com.patrick.strutsnoticeboard.dao.impl" />
       <option name="MAIN_CLASS_NAME" value="com.patrick.strutsnoticeboard.dao.impl.NoticeDaoImplTest" />
       <option name="METHOD_NAME" value="getAllNoticeList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="NoticeDaoImplTest.getCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StrutsNoticeBoard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.patrick.strutsnoticeboard.dao.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="recording" autostart="true" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.patrick.strutsnoticeboard.dao.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.patrick.strutsnoticeboard.dao.impl.NoticeDaoImplTest" />
-      <option name="METHOD_NAME" value="getCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -529,6 +574,30 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="UserDaoImplTest.vertifyUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StrutsNoticeBoard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.patrick.strutsnoticeboard.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="true" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.patrick.strutsnoticeboard.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.patrick.strutsnoticeboard.dao.impl.UserDaoImplTest" />
+      <option name="METHOD_NAME" value="vertifyUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="recording" autostart="true" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -572,7 +641,7 @@
     <configuration name="Tomcat 8.5.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.16" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="web:war exploded">
+        <artifact name="StrutsNoticeBoard:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -691,25 +760,25 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web:war exploded" />
+          <artifact name="StrutsNoticeBoard:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 8.5.30" />
       <item itemvalue="JUnit.TypeDaoImplTest.getAllNoticeType" />
-      <item itemvalue="JUnit.NoticeDaoImplTest.getCount" />
       <item itemvalue="JUnit.NoticeDaoImplTest.getAllNoticeList" />
       <item itemvalue="JUnit.NoticeDaoImplTest.getNoticeByType" />
       <item itemvalue="JUnit.NoticeDaoImplTest.getNoticeById" />
+      <item itemvalue="JUnit.UserDaoImplTest.vertifyUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoImplTest.vertifyUser" />
         <item itemvalue="JUnit.NoticeDaoImplTest.getNoticeById" />
         <item itemvalue="JUnit.NoticeDaoImplTest.getNoticeByType" />
         <item itemvalue="JUnit.NoticeDaoImplTest.getAllNoticeList" />
         <item itemvalue="JUnit.TypeDaoImplTest.getAllNoticeType" />
-        <item itemvalue="JUnit.NoticeDaoImplTest.getCount" />
       </list>
     </recent_temporary>
   </component>
@@ -725,20 +794,11 @@
       <updated>1524013305052</updated>
       <workItem from="1524013308889" duration="6005000" />
       <workItem from="1524019879374" duration="1596000" />
-      <workItem from="1524494773818" duration="28488000" />
+      <workItem from="1524494773818" duration="47017000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NoticeDaoImplTest_getCount - 2018.04.23 at 23h 35m 13s.xml">
-      <configuration name="NoticeDaoImplTest.getCount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TypeDaoImplTest_getAllNoticeType - 2018.04.23 at 23h 44m 07s.xml">
-      <configuration name="TypeDaoImplTest.getAllNoticeType" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NoticeDaoImplTest_getAllNoticeList - 2018.04.24 at 10h 29m 21s.xml">
-      <configuration name="NoticeDaoImplTest.getAllNoticeList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NoticeDaoImplTest_getAllNoticeList - 2018.04.24 at 10h 33m 14s.xml">
       <configuration name="NoticeDaoImplTest.getAllNoticeList" configurationId="JUnit" />
     </history-entry>
@@ -760,9 +820,18 @@
     <history-entry file="NoticeDaoImplTest_getNoticeById - 2018.04.24 at 13h 26m 45s.xml">
       <configuration name="NoticeDaoImplTest.getNoticeById" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserDaoImplTest_vertifyUser - 2018.04.24 at 17h 20m 34s.xml">
+      <configuration name="UserDaoImplTest.vertifyUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoImplTest_vertifyUser - 2018.04.24 at 17h 20m 59s.xml">
+      <configuration name="UserDaoImplTest.vertifyUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoImplTest_vertifyUser - 2018.04.24 at 17h 22m 42s.xml">
+      <configuration name="UserDaoImplTest.vertifyUser" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36089000" />
+    <option name="totallyTimeSpent" value="54618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -774,17 +843,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Key Promoter X" order="0" />
       <window_info anchor="right" id="Palette" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5004042" side_tool="true" weight="0.76565295" />
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.54986876" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32902184" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="0" />
-      <window_info anchor="bottom" id="Statistic" order="1" />
+      <window_info anchor="bottom" id="Statistic" order="1" weight="0.71556354" />
       <window_info anchor="right" id="Database" order="4" weight="0.32902184" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
@@ -796,7 +866,7 @@
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.76565295" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.4995958" visible="true" weight="0.92486584" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.30234438" />
@@ -829,86 +899,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CreateDatebase.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CreateDatebase.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/patrick/strutsnoticeboard/dao/UserDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/ncss_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1600">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/bean/NoticeType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -924,20 +914,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/UserDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5ea65d9d-e5fd-4d6e-8b9f-c1296c18317c/console.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -957,30 +933,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ed3b1026-48ba-4819-945f-3a8b8661d9ad/database/notice/schema/dbo/table/Nuser">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1015,35 +967,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/biz/UserBiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/struts/xwork/xwork-core/2.3.16.3/xwork-core-2.3.16.3.jar!/com/opensymphony/xwork2/Action.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1058,13 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1180,14 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="25" column="90" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/NoticeInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
@@ -1219,13 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/notice/showNoticeByType.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/NoticeDetailController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1233,13 +1138,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1263,10 +1161,184 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/notice/showNoticeByType.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/globalMessages_en_US.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login1.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/biz/UserBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ed3b1026-48ba-4819-945f-3a8b8661d9ad/database/notice/schema/dbo/table/Nuser">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/patrick/strutsnoticeboard/dao/impl/UserDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/logout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/dao/TypeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/web_war_exploded/images/b.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginInitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="277">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LoginVertifyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/login/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/intercepter/LoginIntecepter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/patrick/strutsnoticeboard/controller/LogoutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/back/backIndex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1276,12 +1348,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>web:war exploded</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6017588" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1289,7 +1361,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Struts 2 (StrutsNoticeBoard)|Struts 2</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1350,7 +1422,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.apache.struts:struts2-core:2.3.16.3</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
