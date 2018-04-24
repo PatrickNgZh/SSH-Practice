@@ -10,7 +10,24 @@
             <result name="success">/success.jsp</result>
             <result name="input">/login.jsp</result>
         </action>
-		
-
 	</package>
+
+    <package name="home" extends="struts-default">
+        <default-action-ref name="index"/>
+        <action name="index" class="com.patrick.strutsnoticeboard.controller.IndexController">
+            <result name="success">/WEB-INF/page/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="NoticeInfo" extends="struts-default" namespace="/notice">
+        <action name="init" class="com.patrick.strutsnoticeboard.controller.NoticeInitController" method="init">
+            <result name="init">/WEB-INF/notice/nullList.html</result>
+        </action>
+        <action name="getInfo" class="com.patrick.strutsnoticeboard.controller.NoticeInfoController">
+            <result name="typeInfo">/WEB-INF/notice/showNoticeByType.jsp</result>
+        </action>
+        <action name="showDetail" class="com.patrick.strutsnoticeboard.controller.NoticeDetailController">
+            <result name="showDetail">/WEB-INF/notice/showNoticeDetailByID.jsp</result>
+        </action>
+    </package>
 </struts>

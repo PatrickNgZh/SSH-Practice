@@ -2,7 +2,7 @@ package com.patrick.strutsnoticeboard.controller;
 
 import com.patrick.strutsnoticeboard.biz.UserBiz;
 
-public class LoginController {
+public class LoginController  {
     private String name;
     private String password;
     private UserBiz userBiz = new UserBiz();

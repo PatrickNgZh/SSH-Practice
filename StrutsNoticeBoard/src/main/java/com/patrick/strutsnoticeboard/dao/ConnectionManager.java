@@ -12,7 +12,7 @@ public class ConnectionManager {
         Connection connection = null;
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            connection = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;DatabaseName=NoticeBoard"
+            connection = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;DatabaseName=Notice"
                     , "sa", "6978");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

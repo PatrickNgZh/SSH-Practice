@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="@localhost" uuid="5ea65d9d-e5fd-4d6e-8b9f-c1296c18317c">
-      <database-info product="Microsoft SQL Server" version="11.00.2100" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.4 for SQL Server" driver-version="6.4.0.0">
+    <data-source name="notice@localhost" uuid="ed3b1026-48ba-4819-945f-3a8b8661d9ad">
+      <database-info product="Microsoft SQL Server" version="13.00.1742" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.0 for SQL Server" driver-version="6.0.8112.100">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <user-name>sa</user-name>
-      <introspection-schemas>NoticeBoard:|master:dbo</introspection-schemas>
+      <introspection-schemas>notice:dbo</introspection-schemas>
     </data-source>
   </component>
 </project>

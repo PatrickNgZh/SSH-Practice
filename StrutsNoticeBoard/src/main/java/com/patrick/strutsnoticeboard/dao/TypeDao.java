@@ -1,9 +1,9 @@
-package com.dao;
+package com.patrick.strutsnoticeboard.dao;
+
+import com.patrick.strutsnoticeboard.bean.Type;
 
 import java.util.List;
 
-import com.bean.NoticeType;
-
 public interface TypeDao {
-    List<NoticeType> getAllNoticeType();
+    List<Type> getAllNoticeType();
 }

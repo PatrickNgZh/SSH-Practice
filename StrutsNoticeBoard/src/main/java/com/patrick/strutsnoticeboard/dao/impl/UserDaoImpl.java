@@ -1,4 +1,7 @@
-package com.patrick.strutsnoticeboard.dao;
+package com.patrick.strutsnoticeboard.dao.impl;
+
+import com.patrick.strutsnoticeboard.dao.ConnectionManager;
+import com.patrick.strutsnoticeboard.dao.UserDao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
