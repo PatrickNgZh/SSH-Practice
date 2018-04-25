@@ -6,7 +6,7 @@ import com.patrick.strutsnoticeboard.biz.TypeBiz;
 
 import java.util.List;
 
-public class BackAddNoticesController extends ActionSupport {
+public class BackAddNoticeListController extends ActionSupport {
     private List<Type> list;
 
     public List<Type> getList() {

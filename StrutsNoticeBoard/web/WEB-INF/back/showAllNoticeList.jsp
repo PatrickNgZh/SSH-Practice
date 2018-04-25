@@ -20,10 +20,10 @@
 
         <s:iterator value="list" status="st" var="item">
             <s:url id="alterUrl" value="/notice/getInfo.action?typeId" escapeAmp="false">
-                <s:param name="typeId"><s:property value="#item.id"/></s:param>
+                <s:param name="id"><s:property value="#item.id"/></s:param>
             </s:url>
-            <s:url id="deleteUrl" value="/notice/getInfo.action?typeId" escapeAmp="false">
-                <s:param name="typeId"><s:property value="#item.id"/></s:param>
+            <s:url id="deleteUrl" value="/back/deleteNotice.action?id" escapeAmp="false">
+                <s:param name="id"><s:property value="#item.id"/></s:param>
             </s:url>
             <s:url id="itemUrl" value="/notice/showDetail.action?id" escapeAmp="false">
                 <s:param name="id"><s:property value="#item.id"/></s:param>
@@ -36,7 +36,7 @@
                 <td>
                     <a href="<s:property value="#itemUrl"/>" target="showNotice">修改</a>
                     &nbsp;&nbsp;
-                    <a href="<s:property value="#itemUrl"/>" target="showNotice">删除</a>
+                    <a href="<s:property value="#deleteUrl"/>" target="showNotice">删除</a>
                 </td>
             </tr>
         </s:iterator>

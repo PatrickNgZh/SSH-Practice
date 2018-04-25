@@ -7,7 +7,8 @@
 <title></title>
 </head>
 <body>
-	<%--出错了！<br />--%>
+	出错了！
+	<br />
 	<%--出错原因：<%=exception.getMessage() %>--%>
 </body>
 </html>

@@ -150,7 +150,7 @@ public class NoticeDaoImpl implements NoticeDao {
             preparedStatement.setString(1, notice.getTitle());
             preparedStatement.setString(2, notice.getContent());
             preparedStatement.setString(3, notice.getEditor());
-            preparedStatement.setDate(4,new Date( new java.util.Date().getTime()));
+            preparedStatement.setDate(4,new Date(notice.getCreateTime().getTime()));
             preparedStatement.setInt(5, notice.getType());
             row = preparedStatement.executeUpdate();
             if (row > 0) {

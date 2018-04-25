@@ -24,16 +24,25 @@
                 alert("请填写内容！");
                 return false;
             }
+            var createTime = form1.createTime.value;
+            if ((createTime == null) || (createTime == "")) {
+                alert("请填写发布时间！");
+                return false;
+            }
             return true;
         }
     </script>
 </head>
 <body>
-<form method="post" name="form1" action="noticeServlet" onsubmit="javascript: return checkNotice();">
+<form method="post" name="form1" action="/back/addNotice.action" onsubmit="javascript: return checkNotice();">
     <table>
         <tr>
             <td>标题:</td>
             <td><input type="text" name="title" size="35" value=""/></td>
+        </tr>
+        <tr>
+            <td>发布时间:</td>
+            <td><input type="text" name="createTime" size="35" value="" placeholder="输入格式YYYYMMDD"/></td>
         </tr>
         <tr>
             <td>作者:</td>
@@ -47,7 +56,6 @@
             <td> 类型:</td>
             <td>
                 <select name="type">
-
                     <s:iterator value="list" status="st" var="item">
                         <option value=" <s:property value="#item.id"/>">
                             <s:property value="#item.typeName"/>

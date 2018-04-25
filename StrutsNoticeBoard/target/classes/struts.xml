@@ -53,11 +53,14 @@
         <action name="showAllNotices" class="com.patrick.strutsnoticeboard.controller.BackGetAllNoticesController">
             <result name="success">/WEB-INF/back/showAllNoticeList.jsp</result>
         </action>
-        <action name="addNotices" class="com.patrick.strutsnoticeboard.controller.BackAddNoticesController">
+        <action name="addNoticesList" class="com.patrick.strutsnoticeboard.controller.BackAddNoticeListController">
             <result name="success">/WEB-INF/back/noticeAdd.jsp</result>
         </action>
+        <action name="addNotice" class="com.patrick.strutsnoticeboard.controller.BackAddNoticeController">
+            <result name="success" type="redirectAction">showAllNotices</result>
+        </action>
         <action name="deleteNotice" class="com.patrick.strutsnoticeboard.controller.BackDeleteNoticeController">
-            <result name="success"></result>
+            <result name="success" type="redirectAction">showAllNotices</result>
         </action>
     </package>
 

@@ -33,7 +33,7 @@
             <div class="header_03">通知公告类别</div>
             <div class="column_w300_section_01">
                 <div class="notice_image_wrapper"><img src="/images/ncss_image_02.jpg" alt="image"/></div>
-                <div class="notice_content"><a href="/back/addNotices.action" target="showNotice">添加通知公告</a>
+                <div class="notice_content"><a href="/back/addNoticesList.action" target="showNotice">添加通知公告</a>
                 </div>
                 <div class="cleaner"></div>
             </div>
