@@ -27,11 +27,16 @@ public class ConnectionManager {
     public static boolean closeAll(Connection connection
             , Statement statement, ResultSet resultSet) {
         try {
-            connection.close();
-            statement.close();
-            resultSet.close();
+            if (connection != null) {
+                connection.close();
+            }
+            if (statement != null) {
+                statement.close();
+            }
+            if (resultSet != null) {
+                resultSet.close();
+            }
         } catch (SQLException e) {
-
             e.printStackTrace();
             return false;
         }

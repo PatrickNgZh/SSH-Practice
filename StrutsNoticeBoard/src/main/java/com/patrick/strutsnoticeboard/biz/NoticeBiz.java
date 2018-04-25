@@ -11,13 +11,25 @@ import java.util.List;
  * @date 2018/4/24 0024
  */
 public class NoticeBiz {
-  NoticeDao noticeDao = new NoticeDaoImpl();
+    NoticeDao noticeDao = new NoticeDaoImpl();
 
-  public List<Notice> getNoticeByType(int typeId){
-    return noticeDao.getNoticeByType(typeId);
-  }
+    public List<Notice> getNoticeByType(int typeId) {
+        return noticeDao.getNoticeByType(typeId);
+    }
 
-  public Notice getNoticeById(int noticeId){
-    return noticeDao.getNoticeById(noticeId);
-  }
+    public Notice getNoticeById(int noticeId) {
+        return noticeDao.getNoticeById(noticeId);
+    }
+
+    public List<Notice> getAllNoticeList() {
+        return noticeDao.getAllNoticeList();
+    }
+
+    public boolean deleteNotice(int noticeId) {
+        return noticeDao.deleteNotice(noticeId);
+    }
+
+    public boolean addNotice(Notice notice) {
+        return noticeDao.addNotice(notice);
+    }
 }

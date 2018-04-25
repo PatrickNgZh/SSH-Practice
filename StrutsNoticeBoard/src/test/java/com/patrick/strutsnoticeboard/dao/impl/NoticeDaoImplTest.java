@@ -36,4 +36,18 @@ public class NoticeDaoImplTest {
   public void getNoticeById() {
     System.out.println(new NoticeDaoImpl().getNoticeById(2));
   }
+
+  @Test
+  public void deleteNotice() {
+      System.out.println(new NoticeDaoImpl().deleteNotice(27));
+  }
+
+    @Test
+    public void addNotice() {
+        System.out.println(new NoticeDaoImpl().addNotice(new Notice("test",
+                "test",
+                "me",
+                2
+        )));
+    }
 }

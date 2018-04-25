@@ -14,7 +14,14 @@ public class Notice {
 		
 	}
 
-	public int getId() {
+    public Notice(String title, String content, String editor,int type) {
+        this.title = title;
+        this.content = content;
+        this.editor = editor;
+        this.type = type;
+    }
+
+    public int getId() {
 		return id;
 	}
 

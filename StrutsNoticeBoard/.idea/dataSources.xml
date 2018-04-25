@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="notice@localhost" uuid="ed3b1026-48ba-4819-945f-3a8b8661d9ad">
+    <data-source source="LOCAL" name="@localhost" uuid="c4343214-852b-4f34-b741-bbe097b495da">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://localhost;database=notice</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://localhost</jdbc-url>
       <driver-properties>
         <property name="applicationName" value="DataGrip" />
       </driver-properties>

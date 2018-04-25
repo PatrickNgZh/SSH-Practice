@@ -8,15 +8,8 @@
     <title></title>
 </head>
 <body>
-<s:property value="#session.username"/>
 <s:property value="#session.errorMsg"/>
-<form action="/login/vertify.action" method="post">
-    用户名：<input type="text" name="name"/><br/>
-    密码：<input type="password" name="password"/><br/>
-    <input type="submit" value="登录"/>
-</form>
-
-<s:form action="" method="POST">
+<s:form action="vertify" method="POST">
     <s:textfield name="username" key="username" size="20"/>
     <s:password name="password" key="password" size="20"/>
     <s:submit key="loginBtn"/>

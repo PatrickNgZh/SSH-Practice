@@ -9,11 +9,15 @@ import java.util.List;
  * @date 2018/4/23 0023
  */
 public interface NoticeDao {
-  int getCount();
+    int getCount();
 
-  List<Notice> getAllNoticeList();
+    List<Notice> getAllNoticeList();
 
-  List<Notice> getNoticeByType(int typeId);
+    List<Notice> getNoticeByType(int typeId);
 
-  Notice getNoticeById(int noticeId);
+    Notice getNoticeById(int noticeId);
+
+    boolean deleteNotice(int noticeId);
+
+    boolean addNotice(Notice notice);
 }

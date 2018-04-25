@@ -3,10 +3,7 @@ package com.patrick.strutsnoticeboard.controller;
 import com.opensymphony.xwork2.ActionSupport;
 import com.patrick.strutsnoticeboard.bean.Notice;
 import com.patrick.strutsnoticeboard.biz.NoticeBiz;
-import com.patrick.strutsnoticeboard.dao.impl.NoticeDaoImpl;
-import com.patrick.strutsnoticeboard.dao.impl.TypeDaoImpl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
