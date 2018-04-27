@@ -20,4 +20,8 @@ public interface NoticeDao {
     boolean deleteNotice(int noticeId);
 
     boolean addNotice(Notice notice);
+
+    List<Notice> getPage(int pageSize, int pageIndex);
+
+    boolean updateNotice(Notice notice);
 }

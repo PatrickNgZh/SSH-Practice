@@ -40,7 +40,7 @@
             <div class="cleaner"></div>
             <div class="column_w300_section_01 even_color">
                 <div class="notice_image_wrapper"><img src="/images/ncss_image_04.jpg" alt="image"/></div>
-                <div class="notice_content"><a href="/back/showAllNotices.action" target="showNotice">通知公告列表</a>
+                <div class="notice_content"><a href="/back/showAllNotices.action?pageIndex=1" target="showNotice">通知公告列表</a>
                 </div>
                 <div class="cleaner"></div>
             </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="content_section_01">
                 <div>
-                    <iframe name="showNotice" src="/back/showAllNotices.action" height="300px" width="500px"
+                    <iframe name="showNotice" src="/back/showAllNotices.action?pageIndex=1" height="300px" width="500px"
                             frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"/>
                 </div>
             </div>

@@ -121,7 +121,7 @@ public class NoticeDaoImpl implements NoticeDao {
     @Override
     public boolean deleteNotice(int noticeId) {
         connection = ConnectionManager.getConnection();
-        String sql = "delete Notice where Nno=?";
+        String sql = "delete from Notice where Nno=?";
         try {
             int row = 0;
             preparedStatement = connection.prepareStatement(sql);
@@ -152,6 +152,63 @@ public class NoticeDaoImpl implements NoticeDao {
             preparedStatement.setString(3, notice.getEditor());
             preparedStatement.setDate(4,new Date(notice.getCreateTime().getTime()));
             preparedStatement.setInt(5, notice.getType());
+            row = preparedStatement.executeUpdate();
+            if (row > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+        }
+    }
+
+    @Override
+    public List<Notice> getPage(int pageSize, int pageIndex) {
+        List<Notice> result = new ArrayList<>();
+        connection = ConnectionManager.getConnection();
+        String sql = "select top " + pageSize + " * from notice "
+                +" where Nno not in (select top "
+                + pageSize*(pageIndex-1)
+                + " Nno from notice order by NcreateTime) order by NcreateTime";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                int no=resultSet.getInt("Nno");
+                String title=resultSet.getString("Ntitle");
+                Date date=resultSet.getDate("NcreateTime");
+                Notice notice=new Notice();
+                notice.setId(no);
+                notice.setTitle(title);
+                notice.setCreateTime(date);
+                result.add(notice);
+            }
+            return result;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+        }
+    }
+
+    @Override
+    public boolean updateNotice(Notice notice) {
+        connection = ConnectionManager.getConnection();
+        String sql = "update Notice set Ntitle=?, Ncontent=?,Neditor=?,NcreateTime=?,Ntype=? where Nno=?";
+        int row = 0;
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, notice.getTitle());
+            preparedStatement.setString(2, notice.getContent());
+            preparedStatement.setString(3, notice.getEditor());
+            preparedStatement.setDate(4,new Date(notice.getCreateTime().getTime()));
+            preparedStatement.setInt(5, notice.getType());
+            preparedStatement.setInt(6, notice.getId());
             row = preparedStatement.executeUpdate();
             if (row > 0) {
                 return true;

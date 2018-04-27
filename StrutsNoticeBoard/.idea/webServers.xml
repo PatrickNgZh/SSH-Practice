@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cb662b51-760e-4f46-9cab-1e686db17303" name="123.207.86.168" url="http://123.207.86.168">
+        <fileTransfer host="123.207.86.168" port="21" rootFolder="/Program Files/apache-tomcat-8.5.30/webapps">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

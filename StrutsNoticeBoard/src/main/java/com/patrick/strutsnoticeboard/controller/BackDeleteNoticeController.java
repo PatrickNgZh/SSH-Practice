@@ -4,7 +4,16 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.patrick.strutsnoticeboard.biz.NoticeBiz;
 
 public class BackDeleteNoticeController extends ActionSupport {
+    private int pageIndex;
     private int id;
+
+    public int getPageIndex() {
+        return pageIndex;
+    }
+
+    public void setPageIndex(int pageIndex) {
+        this.pageIndex = pageIndex;
+    }
 
     public int getId() {
         return id;

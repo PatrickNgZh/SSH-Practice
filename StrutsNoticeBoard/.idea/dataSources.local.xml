@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="@localhost" uuid="c4343214-852b-4f34-b741-bbe097b495da">
+    <data-source name="@localhost" uuid="26a99f0f-ab7b-4fd2-a924-a8d6b828a477">
       <database-info product="Microsoft SQL Server" version="11.00.2100" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.4 for SQL Server" driver-version="6.4.0.0">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
-      <domain-auth>true</domain-auth>
+      <user-name>sa</user-name>
+      <introspection-schemas>notice:@</introspection-schemas>
+    </data-source>
+    <data-source name="remote" uuid="bcd314c6-e162-4293-b3f3-baef90a01ac1">
+      <database-info product="Microsoft SQL Server" version="11.00.2100" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.4 for SQL Server" driver-version="6.4.0.0">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>sa</user-name>
       <introspection-schemas>notice:dbo</introspection-schemas>
     </data-source>
   </component>
