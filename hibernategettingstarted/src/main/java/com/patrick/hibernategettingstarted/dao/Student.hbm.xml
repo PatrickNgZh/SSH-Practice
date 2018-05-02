@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.patrick.hibernategettingstarted.dao.Student" table="student" lazy="true">
+        <id name="id">
+            <generator class="increment"/>
+        </id>
+        <property name="name" type="string" length="20"/>
+        <property name="pic"  type="binary">
+            <column name="photo" sql-type="image"/>
+        </property>
+    </class>
+</hibernate-mapping>
