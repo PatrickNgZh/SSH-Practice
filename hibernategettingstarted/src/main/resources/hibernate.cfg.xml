@@ -22,5 +22,6 @@
 
         <!-- 映射文件配置 -->
         <mapping resource="com/patrick/hibernategettingstarted/dao/Student.hbm.xml"/>
+        <mapping resource="com/patrick/hibernategettingstarted/dao/Email.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

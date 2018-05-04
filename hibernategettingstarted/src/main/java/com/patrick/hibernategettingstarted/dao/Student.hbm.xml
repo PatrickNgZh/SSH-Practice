@@ -2,8 +2,8 @@
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping>
-    <class name="com.patrick.hibernategettingstarted.dao.Student" table="student" lazy="true">
+<hibernate-mapping package="com.patrick.hibernategettingstarted.beam">
+    <class name="Student" table="student" lazy="true">
         <id name="id">
             <generator class="increment"/>
         </id>
@@ -11,5 +11,17 @@
         <property name="pic"  type="binary">
             <column name="photo" sql-type="image"/>
         </property>
+        <!-- List映射 -->
+        <list name="emailList" table="tb_emails" lazy="false">
+            <!--key子元素：集合外键的列名-->
+            <key column="student_id"/>
+            <!--list-index：用于存放索引的列-->
+            <list-index column="email_id"/>
+            <!--<composite-element class="Email">-->
+                <!--<property name="address" column="email_address" type="string" length="30"/>-->
+            <!--</composite-element>-->
+            <one-to-many class="Email"/>
+        </list>
     </class>
 </hibernate-mapping>
+<!--注意：单向 n-1关联只能从 n的一端可以访问 1 的一端，同理，相反也成立-->

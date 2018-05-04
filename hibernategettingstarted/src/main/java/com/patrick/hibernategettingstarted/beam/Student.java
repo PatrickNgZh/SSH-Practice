@@ -1,9 +1,21 @@
-package com.patrick.hibernategettingstarted.dao;
+package com.patrick.hibernategettingstarted.beam;
+
+import java.util.List;
 
 public class Student {
     private Integer id;
     private String name;
-    private byte[] pic;  //个人照片
+  //个人照片
+    private byte[] pic;
+    private List<Email> emailList;
+
+    public List<Email> getEmailList() {
+        return emailList;
+    }
+
+    public void setEmailList(List<Email> emailList) {
+        this.emailList = emailList;
+    }
 
     public byte[] getPic() {
         return pic;

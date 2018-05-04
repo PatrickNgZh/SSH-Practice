@@ -1,5 +1,7 @@
 package com.patrick.hibernategettingstarted.dao;
 
+import com.patrick.hibernategettingstarted.beam.Email;
+import com.patrick.hibernategettingstarted.beam.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -12,6 +14,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.List;
 
 public class StudentTest {
     private static SessionFactory sessionFactory;
@@ -173,6 +176,46 @@ public class StudentTest {
             System.out.println(student);
 
             transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+        } finally {
+            if (session != null) session.close();
+        }
+    }
+
+    @Test
+    public void testGetListWithComposite() {
+        Session session = null;
+        Transaction transaction = null;
+        try {
+            session = sessionFactory.openSession();
+            transaction = session.beginTransaction();
+            Student student = (Student) session.get(Student.class, 1);
+            List list = student.getEmailList();
+            System.out.println(list);
+            Email email=new Email();
+            email.setAddress("testList@outlook.com");
+            list.add(email);
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+        } finally {
+            if (session != null) session.close();
+        }
+    }
+
+    @Test
+    public void testDoubleEnd() {
+        Session session = null;
+        Transaction transaction = null;
+        try {
+            session = sessionFactory.openSession();
+            transaction = session.beginTransaction();
+            Student student = (Student) session.get(Student.class, 1);
+            List list = student.getEmailList();
+            System.out.println(list);
         } catch (Exception e) {
             if (transaction != null) transaction.rollback();
             e.printStackTrace();
