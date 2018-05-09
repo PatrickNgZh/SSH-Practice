@@ -8,6 +8,7 @@
     <artifactId>hibernategettingstarted</artifactId>
     <version>1.0</version>
 
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -47,5 +48,17 @@
         </plugins>
     </build>
 
-
+    <repositories>
+        <repository>
+            <id>aliyun-nexus</id>
+            <name>Aliyun Maven Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>

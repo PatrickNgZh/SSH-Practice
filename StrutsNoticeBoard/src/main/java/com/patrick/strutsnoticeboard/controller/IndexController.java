@@ -15,46 +15,46 @@ import java.util.Map;
  * @date 2018/4/24 0024
  */
 public class IndexController extends ActionSupport implements ApplicationAware {
-  private List<Type> list;
-  private String date;
-  private Map<String, Object> application;
+    private List<Type> list;
+    private String date;
+    private Map<String, Object> application;
 
 
-  public List<Type> getList() {
-    return list;
-  }
-
-  public void setList(List<Type> list) {
-    this.list = list;
-  }
-
-  public String getDate() {
-    return date;
-  }
-
-  public void setDate(String date) {
-    this.date = date;
-  }
-
-  @Override
-  public void setApplication(Map<String, Object> map) {
-    this.application = map;
-  }
-
-  @Override
-  public String execute() {
-    if (application.get("count") == null) {
-      application.put("count", -1);
-    } else {
-      int count = Integer.parseInt(application.get("count").toString());
-      application.put("count", count + 1);
+    public List<Type> getList() {
+        return list;
     }
-    TypeBiz typeBiz = new TypeBiz();
-    list = typeBiz.getAllNoticeType();
-    SimpleDateFormat formater = new SimpleDateFormat("yyyy年MM月dd日");
-    date = formater.format(new Date());
-    return SUCCESS;
-  }
+
+    public void setList(List<Type> list) {
+        this.list = list;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    @Override
+    public void setApplication(Map<String, Object> map) {
+        this.application = map;
+    }
+
+    @Override
+    public String execute() {
+        if (application.get("count") == null) {
+            application.put("count", -1);
+        } else {
+            int count = Integer.parseInt(application.get("count").toString());
+            application.put("count", count + 1);
+        }
+        TypeBiz typeBiz = new TypeBiz();
+        list = typeBiz.getAllNoticeType();
+        SimpleDateFormat formater = new SimpleDateFormat("yyyy年MM月dd日");
+        date = formater.format(new Date());
+        return SUCCESS;
+    }
 
 
 }

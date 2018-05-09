@@ -16,28 +16,28 @@ import java.util.List;
  * @date 2018/4/23 0023
  */
 public class TypeDaoImpl implements TypeDao {
-  private Connection connection = null;
-  private PreparedStatement preparedStatement = null;
-  private ResultSet resultSet = null;
+    private Connection connection = null;
+    private PreparedStatement preparedStatement = null;
+    private ResultSet resultSet = null;
 
-  @Override
-  public List<Type> getAllNoticeType() {
-    List<Type> list = new ArrayList<>();
-    connection = ConnectionManager.getConnection();
-    String sql = "select * " +
-            "from Type;";
-    try {
-      preparedStatement = connection.prepareStatement(sql);
-      resultSet = preparedStatement.executeQuery();
-      while (resultSet.next()) {
-        list.add(new Type(resultSet.getInt(1), resultSet.getString(2)));
-      }
-      return list;
-    } catch (SQLException e) {
-      e.printStackTrace();
-      return null;
-    } finally {
-      ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+    @Override
+    public List<Type> getAllNoticeType() {
+        List<Type> list = new ArrayList<>();
+        connection = ConnectionManager.getConnection();
+        String sql = "select * " +
+                "from Type;";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                list.add(new Type(resultSet.getInt(1), resultSet.getString(2)));
+            }
+            return list;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            ConnectionManager.closeAll(connection, preparedStatement, resultSet);
+        }
     }
-  }
 }

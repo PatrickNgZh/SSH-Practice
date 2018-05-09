@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.patrick.strutsnoticeboard.bean">
+    <class name="Type" table="Type" lazy="false">
+        <id name="id">
+            <column name="Tno"/>
+        </id>
+        <property name="typeName" column="TtypeName" type="string" length="20"/>
+        <bag name="noticeList" cascade="delete" lazy="false">
+            <key column="Ntype" not-null="false"/>
+            <one-to-many class="Notice"/>
+        </bag>
+    </class>
+</hibernate-mapping>
+

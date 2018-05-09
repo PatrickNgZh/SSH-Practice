@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.patrick.strutsnoticeboard.bean">
+    <class name="Notice" table="Notice" lazy="false">
+        <id name="id">
+            <column name="Nno"/>
+        </id>
+        <property name="title" column="Ntitle" type="string" length="20"/>
+        <property name="type" column="Ntype" type="integer"/>
+        <property name="content" column="Ncontent" type="string" length="20"/>
+        <property name="createTime" column="NcreateTime" type="date"/>
+        <property name="editor" column="Neditor" type="string" length="20"/>
+    </class>
+</hibernate-mapping>
