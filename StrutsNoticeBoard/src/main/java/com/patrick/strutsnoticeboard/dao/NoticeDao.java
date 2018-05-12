@@ -9,7 +9,7 @@ import java.util.List;
  * @date 2018/4/23 0023
  */
 public interface NoticeDao {
-    int getCount();
+    long getCount();
 
     List<Notice> getAllNoticeList();
 

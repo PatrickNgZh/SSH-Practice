@@ -36,12 +36,12 @@ public class NoticeBiz {
         return noticeDao.addNotice(notice);
     }
 
-    public List<Notice> getPage(int pageIndex) {
-        return noticeDao.getPage((int) PAGE_SIZE, pageIndex);
-    }
-
     public boolean updateNotice(Notice notice) {
         return noticeDao.updateNotice(notice);
+    }
+
+    public List<Notice> getPage(int pageIndex) {
+        return noticeDao.getPage((int)PAGE_SIZE, pageIndex);
     }
 
     public int getCount() {

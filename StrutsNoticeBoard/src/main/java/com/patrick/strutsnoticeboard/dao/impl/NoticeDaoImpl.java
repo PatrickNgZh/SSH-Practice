@@ -18,7 +18,7 @@ public class NoticeDaoImpl implements NoticeDao {
     private ResultSet resultSet = null;
 
     @Override
-    public int getCount() {
+    public long getCount() {
         int result = 0;
         connection = ConnectionManager.getConnection();
         String sql = "select count(*) from notice";

@@ -61,7 +61,7 @@
 <s:url id="afterward" value="/back/showAllNotices.action?pageIndex" escapeAmp="false">
     <s:param name="pageIndex"><s:property value="pageIndex+1"/></s:param>
 </s:url>
-<a href="/back/showAllNotices.action?pageIndex=1">首页</a>
+<a href="/StrutsNoticeBoard/back/showAllNotices.action?pageIndex=1">首页</a>
 <a href="<s:property value="#forward"/>">上一页</a>&nbsp;&nbsp;
 <s:property value="pageIndex"/>/<s:property value="totalPage"/>&nbsp;&nbsp;
 <a href="<s:property value="#afterward"/>">下一页</a>

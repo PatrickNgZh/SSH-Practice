@@ -30,7 +30,7 @@
 </head>
 <body>
 
-<form method="post" name="form1" action="/back/alertNoticeReturn.action" onsubmit="javascript: return checkNotice();">
+<form method="post" name="form1" action="/StrutsNoticeBoard/back/alertNoticeReturn.action" onsubmit="javascript: return checkNotice();">
     <table>
         <tr>
             <td>标题:</td>

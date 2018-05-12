@@ -3,18 +3,32 @@ package com.patrick.strutsnoticeboard.dao.impl;
 import com.patrick.strutsnoticeboard.bean.Notice;
 import com.patrick.strutsnoticeboard.bean.Type;
 import com.patrick.strutsnoticeboard.dao.NoticeDao;
-import com.patrick.strutsnoticeboard.utils.HibernateConfiguration;
-import org.hibernate.Query;
+import com.patrick.strutsnoticeboard.utils.HibernateUtil;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import java.util.List;
 
 public class NoticeDaoHibernateImpl implements NoticeDao {
     @Override
-    public int getCount() {
-        return 0;
+    public long getCount() {
+        Session session = null;
+        Transaction transaction = null;
+        long ans = 0;
+        try {
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
+            transaction = session.beginTransaction();
+
+            String hql = "select count(*) from Notice";
+            ans = (long) session.createQuery(hql).uniqueResult();
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+            return 0;
+        }
+        return ans;
     }
 
     @Override
@@ -28,8 +42,7 @@ public class NoticeDaoHibernateImpl implements NoticeDao {
         Transaction transaction = null;
         List list;
         try {
-            SessionFactory sessionFactory = HibernateConfiguration.getSessionFactory();
-            session = sessionFactory.openSession();
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
             transaction = session.beginTransaction();
 
             Type type = (Type) session.get(Type.class, typeId);
@@ -41,8 +54,6 @@ public class NoticeDaoHibernateImpl implements NoticeDao {
             if (transaction != null) transaction.rollback();
             e.printStackTrace();
             return null;
-        } finally {
-            if (session != null) session.close();
         }
         return list;
     }
@@ -53,8 +64,7 @@ public class NoticeDaoHibernateImpl implements NoticeDao {
         Transaction transaction = null;
         Notice notice;
         try {
-            SessionFactory sessionFactory = HibernateConfiguration.getSessionFactory();
-            session = sessionFactory.openSession();
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
             transaction = session.beginTransaction();
 
             String hql = "from Notice notice where notice.id=:noticeId";
@@ -68,29 +78,90 @@ public class NoticeDaoHibernateImpl implements NoticeDao {
             if (transaction != null) transaction.rollback();
             e.printStackTrace();
             return null;
-        } finally {
-            if (session != null) session.close();
         }
         return notice;
     }
 
     @Override
     public boolean deleteNotice(int noticeId) {
-        return false;
+        Session session = null;
+        Transaction transaction = null;
+        try {
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
+            transaction = session.beginTransaction();
+
+            Notice notice = (Notice) session.get(Notice.class, noticeId);
+
+            session.delete(notice);
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+            return false;
+        }
+        return true;
     }
 
     @Override
     public boolean addNotice(Notice notice) {
-        return false;
+        Session session = null;
+        Transaction transaction = null;
+        try {
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
+            transaction = session.beginTransaction();
+
+            session.save(notice);
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+            return false;
+        }
+        return true;
     }
 
     @Override
     public List<Notice> getPage(int pageSize, int pageIndex) {
-        return null;
+        Session session = null;
+        Transaction transaction = null;
+        List list;
+        try {
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
+            transaction = session.beginTransaction();
+
+            String hql = "from Notice notice order by notice.id";
+            list = session.createQuery(hql)
+                    .setFirstResult((pageIndex - 1) * pageSize)  //(pageIndex-1)*pageSize
+                    .setMaxResults(pageSize)   //pageSize
+                    .list();
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+            return null;
+        }
+        return list;
     }
 
     @Override
     public boolean updateNotice(Notice notice) {
-        return false;
+        Session session = null;
+        Transaction transaction = null;
+        try {
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
+            transaction = session.beginTransaction();
+
+            session.update(notice);
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) transaction.rollback();
+            e.printStackTrace();
+            return false;
+        }
+        return true;
     }
 }

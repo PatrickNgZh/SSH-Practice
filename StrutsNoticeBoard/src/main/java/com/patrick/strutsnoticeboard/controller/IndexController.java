@@ -44,7 +44,7 @@ public class IndexController extends ActionSupport implements ApplicationAware {
     @Override
     public String execute() {
         if (application.get("count") == null) {
-            application.put("count", -1);
+            application.put("count", 0);
         } else {
             int count = Integer.parseInt(application.get("count").toString());
             application.put("count", count + 1);

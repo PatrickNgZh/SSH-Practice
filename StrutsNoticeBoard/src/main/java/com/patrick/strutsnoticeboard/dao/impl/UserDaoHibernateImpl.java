@@ -1,10 +1,8 @@
 package com.patrick.strutsnoticeboard.dao.impl;
 
-import com.patrick.strutsnoticeboard.bean.Notice;
 import com.patrick.strutsnoticeboard.dao.UserDao;
-import com.patrick.strutsnoticeboard.utils.HibernateConfiguration;
+import com.patrick.strutsnoticeboard.utils.HibernateUtil;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import java.util.List;
@@ -20,8 +18,7 @@ public class UserDaoHibernateImpl implements UserDao {
         Transaction transaction = null;
         Boolean judge = false;
         try {
-            SessionFactory sessionFactory = HibernateConfiguration.getSessionFactory();
-            session = sessionFactory.openSession();
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
             transaction = session.beginTransaction();
 
             String hql = "from User user where user.name=:userName " +
@@ -43,8 +40,6 @@ public class UserDaoHibernateImpl implements UserDao {
             if (transaction != null) transaction.rollback();
             e.printStackTrace();
             return false;
-        } finally {
-            if (session != null) session.close();
         }
         return judge;
     }

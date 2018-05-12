@@ -19,7 +19,7 @@
         <property name="applicationName" value="DataGrip" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="e4aaab29-dc9b-4e03-ad0c-a689429879ec">
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="c0532206-0bdb-4ed0-b68f-daba05b61db3">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
