@@ -8,7 +8,7 @@
             <column name="Tno"/>
         </id>
         <property name="typeName" column="TtypeName" type="string" length="20"/>
-        <bag name="noticeList" cascade="delete" lazy="false">
+        <bag name="noticeList" cascade="delete">
             <key column="Ntype" not-null="false"/>
             <one-to-many class="Notice"/>
         </bag>

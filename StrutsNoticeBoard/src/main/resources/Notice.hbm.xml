@@ -3,7 +3,7 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.patrick.strutsnoticeboard.bean">
-    <class name="Notice" table="Notice" lazy="false">
+    <class name="Notice" table="Notice" lazy="true">
         <id name="id">
             <column name="Nno"/>
             <generator class="native"></generator>

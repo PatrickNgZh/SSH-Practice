@@ -5,6 +5,7 @@
 
 <struts>
     <constant name="struts.custom.i18n.resources" value="globalMessages"/>
+    <constant name="struts.objectFactory" value="spring" />
     
     <package name="user" extends="struts-default" namespace="/login">
 
@@ -45,7 +46,7 @@
         </global-exception-mappings>
 
 
-        <action name="index" class="com.patrick.strutsnoticeboard.controller.IndexController">
+        <action name="index" class="indexController">
             <result name="success">/WEB-INF/page/index.jsp</result>
         </action>
     </package>
@@ -56,14 +57,14 @@
             <result name="error">/WEB-INF/error.jsp</result>
         </global-results>
 
-        <global-exception-mappings>
-            <exception-mapping exception="java.lang.Exception" result="error"></exception-mapping>
-        </global-exception-mappings>
+        <!--<global-exception-mappings>-->
+            <!--<exception-mapping exception="java.lang.Exception" result="error"></exception-mapping>-->
+        <!--</global-exception-mappings>-->
 
         <action name="init" class="com.patrick.strutsnoticeboard.controller.NoticeInitController" method="init">
             <result name="init">/WEB-INF/notice/nullList.html</result>
         </action>
-        <action name="getInfo" class="com.patrick.strutsnoticeboard.controller.NoticeInfoController">
+        <action name="getInfo" class="noticeInfoController">
             <result name="typeInfo">/WEB-INF/notice/showNoticeByType.jsp</result>
         </action>
         <action name="showDetail" class="com.patrick.strutsnoticeboard.controller.NoticeDetailController">

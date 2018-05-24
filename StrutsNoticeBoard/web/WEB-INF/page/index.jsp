@@ -29,7 +29,7 @@
                     <s:if test="list.size!=0&&list!=null">
 
                         <s:iterator value="list" status="st" var="item">
-                            <s:url id="itemUrl" value="/notice/getInfo.action?typeId" escapeAmp="false">
+                            <s:url var="itemUrl" value="/notice/getInfo.action?typeId" escapeAmp="false">
                                 <s:param name="typeId"><s:property value="#item.id"/></s:param>
                             </s:url>
 

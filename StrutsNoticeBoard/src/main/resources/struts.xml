@@ -5,6 +5,7 @@
 
 <struts>
     <constant name="struts.custom.i18n.resources" value="globalMessages"/>
+    <constant name="struts.objectFactory" value="spring" />
     
     <package name="user" extends="struts-default" namespace="/login">
 
@@ -45,7 +46,7 @@
         </global-exception-mappings>
 
 
-        <action name="index" class="com.patrick.strutsnoticeboard.controller.IndexController">
+        <action name="index" class="indexController">
             <result name="success">/WEB-INF/page/index.jsp</result>
         </action>
     </package>
