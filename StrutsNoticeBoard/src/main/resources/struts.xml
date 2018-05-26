@@ -21,13 +21,13 @@
             <exception-mapping exception="java.lang.Exception" result="error"></exception-mapping>
         </global-exception-mappings>
 
-        <action name="login" class="com.patrick.strutsnoticeboard.controller.LoginController">
+        <action name="login" class="loginController">
             <result name="success">/WEB-INF/back/backIndex.jsp</result>
             <result name="input">/WEB-INF/login/login.jsp</result>
             <interceptor-ref name="logininterceptor"/>
         </action>
 
-        <action name="vertify" class="com.patrick.strutsnoticeboard.controller.LoginVertifyController">
+        <action name="vertify" class="loginVertifyController">
             <result name="success">/WEB-INF/back/backIndex.jsp</result>
             <result name="input">/WEB-INF/login/login.jsp</result>
         </action>
@@ -61,13 +61,13 @@
             <exception-mapping exception="java.lang.Exception" result="error"></exception-mapping>
         </global-exception-mappings>
 
-        <action name="init" class="com.patrick.strutsnoticeboard.controller.NoticeInitController" method="init">
+        <action name="init" class="noticeInitController" method="init">
             <result name="init">/WEB-INF/notice/nullList.html</result>
         </action>
-        <action name="getInfo" class="com.patrick.strutsnoticeboard.controller.NoticeInfoController">
+        <action name="getInfo" class="noticeInfoController">
             <result name="typeInfo">/WEB-INF/notice/showNoticeByType.jsp</result>
         </action>
-        <action name="showDetail" class="com.patrick.strutsnoticeboard.controller.NoticeDetailController">
+        <action name="showDetail" class="noticeDetailController">
             <result name="showDetail">/WEB-INF/notice/showNoticeDetailByID.jsp</result>
         </action>
     </package>
@@ -82,7 +82,7 @@
             <exception-mapping exception="java.lang.Exception" result="error"></exception-mapping>
         </global-exception-mappings>
 
-        <action name="logout" class="com.patrick.strutsnoticeboard.controller.LogoutController">
+        <action name="logout" class="logoutController">
             <result name="success">/WEB-INF/page/index.jsp</result>
         </action>
     </package>
@@ -97,28 +97,28 @@
             <exception-mapping exception="java.lang.Exception" result="error"></exception-mapping>
         </global-exception-mappings>
 
-        <action name="showAllNotices" class="com.patrick.strutsnoticeboard.controller.BackGetNoticePageController">
+        <action name="showAllNotices" class="backGetNoticePageController">
             <result name="success">/WEB-INF/back/showAllNoticeList.jsp</result>
         </action>
-        <action name="addNoticesList" class="com.patrick.strutsnoticeboard.controller.BackAddNoticeListController">
+        <action name="addNoticesList" class="backAddNoticeListController">
             <result name="success">/WEB-INF/back/noticeAdd.jsp</result>
         </action>
-        <action name="addNotice" class="com.patrick.strutsnoticeboard.controller.BackAddNoticeController">
+        <action name="addNotice" class="backAddNoticeController">
             <result name="success" type="redirectAction">showAllNotices?pageIndex=1</result>
         </action>
-        <action name="deleteNotice" class="com.patrick.strutsnoticeboard.controller.BackDeleteNoticeController">
+        <action name="deleteNotice" class="backDeleteNoticeController">
             <result name="success" type="redirectAction">
                 <param name="actionName">showAllNotices</param>
                 <param name="pageIndex">${pageIndex}</param>
             </result>
         </action>
-        <action name="alertNoticeReturn" class="com.patrick.strutsnoticeboard.controller.BackAlertNoticeReturnController">
+        <action name="alertNoticeReturn" class="backAlertNoticeReturnController">
             <result name="success" type="redirectAction">
                 <param name="actionName">showAllNotices</param>
                 <param name="pageIndex">${pageIndex}</param>
             </result>
         </action>
-        <action name="alertNotice" class="com.patrick.strutsnoticeboard.controller.BackAlertNoticeController">
+        <action name="alertNotice" class="backAlertNoticeController">
             <result name="success">/WEB-INF/back/noticeEdit.jsp</result>
         </action>
     </package>

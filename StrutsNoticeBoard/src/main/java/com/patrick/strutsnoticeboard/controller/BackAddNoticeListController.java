@@ -2,12 +2,20 @@ package com.patrick.strutsnoticeboard.controller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.patrick.strutsnoticeboard.bean.Type;
-import com.patrick.strutsnoticeboard.biz.TypeBiz;
+import com.patrick.strutsnoticeboard.biz.TypeService;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
 import java.util.List;
 
+@Controller("backAddNoticeListController")
+@Scope("request")
 public class BackAddNoticeListController extends ActionSupport {
     private List<Type> list;
+
+    @Resource
+    private TypeService typeService;
 
     public List<Type> getList() {
         return list;
@@ -19,8 +27,7 @@ public class BackAddNoticeListController extends ActionSupport {
 
     @Override
     public String execute() {
-        TypeBiz typeBiz = new TypeBiz();
-        list = typeBiz.getAllNoticeType();
+        list = typeService.getAllNoticeType();
         return SUCCESS;
     }
 }

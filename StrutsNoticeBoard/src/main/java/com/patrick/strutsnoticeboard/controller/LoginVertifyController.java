@@ -2,17 +2,25 @@ package com.patrick.strutsnoticeboard.controller;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import com.patrick.strutsnoticeboard.biz.UserBiz;
+import com.patrick.strutsnoticeboard.biz.UserService;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
 import java.util.Map;
 
 /**
  * @author peicong
  * @date 2018/4/24 0024
  */
+@Controller("loginVertifyController")
+@Scope("request")
 public class LoginVertifyController extends ActionSupport {
     private String username;
     private String password;
+
+    @Resource
+    private UserService userService;
 
     public String getUsername() {
         return username;
@@ -32,8 +40,7 @@ public class LoginVertifyController extends ActionSupport {
 
     @Override
     public String execute() {
-        UserBiz userBiz = new UserBiz();
-        if (userBiz.vertifyUser(username, password)) {
+        if (userService.vertifyUser(username, password)) {
             Map session = ActionContext.getContext().getSession();
             session.put("username", username);
             return "success";

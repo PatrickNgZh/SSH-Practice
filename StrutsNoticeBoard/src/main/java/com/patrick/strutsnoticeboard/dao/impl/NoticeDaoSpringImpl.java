@@ -1,6 +1,7 @@
 package com.patrick.strutsnoticeboard.dao.impl;
 
 import com.patrick.strutsnoticeboard.bean.Notice;
+import com.patrick.strutsnoticeboard.bean.Type;
 import com.patrick.strutsnoticeboard.dao.NoticeDao;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,8 @@ public class NoticeDaoSpringImpl implements NoticeDao {
 
     @Override
     public long getCount() {
-        return 0;
+        String hql = "select count(*) from Notice";
+        return (long) sessionFactory.getCurrentSession().createQuery(hql).uniqueResult();
     }
 
     @Override
@@ -33,7 +35,8 @@ public class NoticeDaoSpringImpl implements NoticeDao {
 
     @Override
     public List<Notice> getNoticeByType(int typeId) {
-        return null;
+        Type type = (Type) sessionFactory.getCurrentSession().get(Type.class, typeId);
+        return type.getNoticeList();
     }
 
     @Override
@@ -47,21 +50,30 @@ public class NoticeDaoSpringImpl implements NoticeDao {
 
     @Override
     public boolean deleteNotice(int noticeId) {
-        return false;
+        Notice notice = (Notice) sessionFactory.getCurrentSession().get(Notice.class, noticeId);
+        sessionFactory.getCurrentSession().delete(notice);
+        return true;
     }
 
     @Override
     public boolean addNotice(Notice notice) {
-        return false;
+        sessionFactory.getCurrentSession().save(notice);
+        return true;
     }
 
     @Override
     public List<Notice> getPage(int pageSize, int pageIndex) {
-        return null;
+        String hql = "from Notice notice order by notice.id";
+        return (List<Notice>) sessionFactory.getCurrentSession()
+                .createQuery(hql)
+                .setFirstResult((pageIndex - 1) * pageSize)  //(pageIndex-1)*pageSize
+                .setMaxResults(pageSize)   //pageSize
+                .list();
     }
 
     @Override
     public boolean updateNotice(Notice notice) {
-        return false;
+        sessionFactory.getCurrentSession().update(notice);
+        return true;
     }
 }

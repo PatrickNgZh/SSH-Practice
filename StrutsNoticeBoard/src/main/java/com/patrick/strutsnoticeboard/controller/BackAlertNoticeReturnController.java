@@ -2,10 +2,15 @@ package com.patrick.strutsnoticeboard.controller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.patrick.strutsnoticeboard.bean.Notice;
-import com.patrick.strutsnoticeboard.biz.NoticeBiz;
+import com.patrick.strutsnoticeboard.biz.NoticeService;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
 import java.util.Date;
 
+@Controller("backAlertNoticeReturnController")
+@Scope("request")
 public class BackAlertNoticeReturnController extends ActionSupport {
     private int pageIndex;
     private int id;
@@ -14,6 +19,9 @@ public class BackAlertNoticeReturnController extends ActionSupport {
     private String content;
     private Date date;
     private int type;
+
+    @Resource
+    private NoticeService noticeService;
 
     public String getTitle() {
         return title;
@@ -80,8 +88,7 @@ public class BackAlertNoticeReturnController extends ActionSupport {
         notice.setEditor(editor);
         notice.setCreateTime(new Date());
         notice.setType(type);
-        NoticeBiz noticeBiz = new NoticeBiz();
-        noticeBiz.updateNotice(notice);
+        noticeService.updateNotice(notice);
         return SUCCESS;
     }
 }

@@ -3,17 +3,28 @@ package com.patrick.strutsnoticeboard.controller;
 import com.opensymphony.xwork2.ActionSupport;
 import com.patrick.strutsnoticeboard.bean.Notice;
 import com.patrick.strutsnoticeboard.bean.Type;
-import com.patrick.strutsnoticeboard.biz.NoticeBiz;
-import com.patrick.strutsnoticeboard.biz.TypeBiz;
+import com.patrick.strutsnoticeboard.biz.NoticeService;
+import com.patrick.strutsnoticeboard.biz.TypeService;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
 import java.util.List;
 
+@Controller("backAlertNoticeController")
+@Scope("request")
 public class BackAlertNoticeController extends ActionSupport {
     private int id;
     private int pageIndex;
     private Notice notice;
     private List<Type> list;
     private Type type;
+
+    @Resource
+    private NoticeService noticeService;
+
+    @Resource
+    private TypeService typeService;
 
     public Type getType() {
         return type;
@@ -57,10 +68,8 @@ public class BackAlertNoticeController extends ActionSupport {
 
     @Override
     public String execute() {
-        NoticeBiz noticeBiz = new NoticeBiz();
-        notice = noticeBiz.getNoticeById(id);
-        TypeBiz typeBiz = new TypeBiz();
-        list = typeBiz.getAllNoticeType();
+        notice = noticeService.getNoticeById(id);
+        list = typeService.getAllNoticeType();
 
         for (Type temp : list) {
             if (temp.getId() == notice.getType()) {

@@ -2,10 +2,11 @@ package com.patrick.strutsnoticeboard.controller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.patrick.strutsnoticeboard.bean.Notice;
-import com.patrick.strutsnoticeboard.biz.NoticeBiz;
+import com.patrick.strutsnoticeboard.biz.NoticeService;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -18,10 +19,12 @@ public class NoticeInfoController extends ActionSupport {
     int typeId;
     private List<Notice> list;
 
+    @Resource
+    private NoticeService noticeService;
+
     @Override
     public String execute() {
-        NoticeBiz noticeBiz = new NoticeBiz();
-        list = noticeBiz.getNoticeByType(typeId);
+        list = noticeService.getNoticeByType(typeId);
         System.out.println(typeId);
         System.out.println(list);
         return "typeInfo";

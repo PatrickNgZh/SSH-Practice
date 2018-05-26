@@ -2,11 +2,12 @@ package com.patrick.strutsnoticeboard.controller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.patrick.strutsnoticeboard.bean.Type;
-import com.patrick.strutsnoticeboard.biz.TypeBiz;
+import com.patrick.strutsnoticeboard.biz.TypeService;
 import org.apache.struts2.interceptor.ApplicationAware;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -22,6 +23,9 @@ public class IndexController extends ActionSupport implements ApplicationAware {
     private List<Type> list;
     private String date;
     private Map<String, Object> application;
+
+    @Resource
+    private TypeService typeService;
 
 
     public List<Type> getList() {
@@ -53,8 +57,7 @@ public class IndexController extends ActionSupport implements ApplicationAware {
             int count = Integer.parseInt(application.get("count").toString());
             application.put("count", count + 1);
         }
-        TypeBiz typeBiz = new TypeBiz();
-        list = typeBiz.getAllNoticeType();
+        list = typeService.getAllNoticeType();
         SimpleDateFormat formater = new SimpleDateFormat("yyyy年MM月dd日");
         date = formater.format(new Date());
         return SUCCESS;

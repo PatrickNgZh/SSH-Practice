@@ -19,15 +19,15 @@
     <s:if test="list.size!=0&&list!=null">
 
         <s:iterator value="list" status="st" var="item">
-            <s:url id="alertUrl" value="/back/alertNotice.action?id&&pageIndex" escapeAmp="false">
+            <s:url var="alertUrl" value="/back/alertNotice.action?id&&pageIndex" escapeAmp="false">
                 <s:param name="id"><s:property value="#item.id"/></s:param>
                 <s:param name="pageIndex"><s:property value="pageIndex"/></s:param>
             </s:url>
-            <s:url id="deleteUrl" value="/back/deleteNotice.action?id&&pageIndex" escapeAmp="false">
+            <s:url var="deleteUrl" value="/back/deleteNotice.action?id&&pageIndex" escapeAmp="false">
                 <s:param name="id"><s:property value="#item.id"/></s:param>
                 <s:param name="pageIndex"><s:property value="pageIndex"/></s:param>
             </s:url>
-            <s:url id="itemUrl" value="/notice/showDetail.action?id" escapeAmp="false">
+            <s:url var="itemUrl" value="/notice/showDetail.action?id" escapeAmp="false">
                 <s:param name="id"><s:property value="#item.id"/></s:param>
             </s:url>
             <tr>
@@ -52,13 +52,13 @@
 </table>
 
 
-<s:url id="last" value="/back/showAllNotices.action?pageIndex" escapeAmp="false">
+<s:url var="last" value="/back/showAllNotices.action?pageIndex" escapeAmp="false">
     <s:param name="pageIndex"><s:property value="totalPage"/></s:param>
 </s:url>
-<s:url id="forward" value="/back/showAllNotices.action?pageIndex" escapeAmp="false">
+<s:url var="forward" value="/back/showAllNotices.action?pageIndex" escapeAmp="false">
     <s:param name="pageIndex"><s:property value="pageIndex-1"/></s:param>
 </s:url>
-<s:url id="afterward" value="/back/showAllNotices.action?pageIndex" escapeAmp="false">
+<s:url var="afterward" value="/back/showAllNotices.action?pageIndex" escapeAmp="false">
     <s:param name="pageIndex"><s:property value="pageIndex+1"/></s:param>
 </s:url>
 <a href="/StrutsNoticeBoard/back/showAllNotices.action?pageIndex=1">首页</a>

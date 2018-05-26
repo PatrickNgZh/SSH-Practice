@@ -1,7 +1,7 @@
-package com.patrick.strutsnoticeboard.dao.impl;
+package com.patrick.strutsnoticeboard.biz.impl;
 
 import com.patrick.strutsnoticeboard.bean.Notice;
-import com.patrick.strutsnoticeboard.dao.NoticeDao;
+import com.patrick.strutsnoticeboard.biz.NoticeService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -9,43 +9,29 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Date;
 
-/**
- * @author peicong
- * @date 2018/5/23 0023
- */
-public class NoticeDaoSpringImplTest {
-    private static NoticeDao noticeDao;
+public class NoticeServiceImplTest {
+    private static NoticeService noticeService;
 
     @Before
     public void setUp() throws Exception {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-        noticeDao = (NoticeDao) applicationContext.getBean("noticeDao");
-    }
-
-    @Test
-    public void getNoticeById() {
-        System.out.println(noticeDao.getNoticeById(20));
-        System.out.println(noticeDao.getNoticeById(3));
-    }
-
-
-    @Test
-    public void getCount() {
-        System.out.println(noticeDao.getCount());
-    }
-
-    @Test
-    public void getAllNoticeList() {
+        noticeService = (NoticeService) applicationContext.getBean("noticeService");
     }
 
     @Test
     public void getNoticeByType() {
-        System.out.println(noticeDao.getNoticeByType(1));
+        System.out.println(noticeService.getNoticeByType(1));
+    }
+
+    @Test
+    public void getNoticeById() {
+        System.out.println(noticeService.getNoticeById(20));
+        System.out.println(noticeService.getNoticeById(3));
     }
 
     @Test
     public void deleteNotice() {
-        System.out.println(noticeDao.deleteNotice(16));
+        System.out.println(noticeService.deleteNotice(17));
     }
 
     @Test
@@ -57,13 +43,7 @@ public class NoticeDaoSpringImplTest {
         notice.setId(30);
         notice.setContent("blank");
         notice.setCreateTime(new Date());
-        System.out.println(new NoticeDaoImpl().addNotice(notice));
-    }
-
-    @Test
-    public void getPage() {
-        System.out.println(noticeDao.getPage(3, 1));
-        System.out.println(noticeDao.getPage(3, 2));
+        System.out.println(noticeService.addNotice(notice));
     }
 
     @Test
@@ -75,6 +55,17 @@ public class NoticeDaoSpringImplTest {
         notice.setId(17);
         notice.setContent("这是更新测试");
         notice.setCreateTime(new Date());
-        System.out.println(new NoticeDaoImpl().updateNotice(notice));
+        System.out.println(noticeService.updateNotice(notice));
+    }
+
+    @Test
+    public void getPage() {
+        System.out.println(noticeService.getPage(3));
+        System.out.println(noticeService.getPage(3));
+    }
+
+    @Test
+    public void getCount() {
+        System.out.println(noticeService.getCount());
     }
 }
